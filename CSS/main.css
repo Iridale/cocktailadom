@@ -1,0 +1,11 @@
+body {
+	background:rgb(9, 13, 71);
+}
+
+header {
+    text-align: center;
+    vertical-align: middle;
+	color:rgb(119, 108, 156);
+	display:table;
+	width:100%;
+}
