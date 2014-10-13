@@ -1,5 +1,8 @@
 body {
 	background:rgb(9, 13, 71);
+	color:#F7D7FF;
+	font-family:Comic sans MS;
+	font-size:1.5em;
 }
 
 header {
@@ -8,4 +11,25 @@ header {
 	color:rgb(119, 108, 156);
 	display:table;
 	width:100%;
+	background-color:orange;
+}
+
+
+a {
+	color:inherit;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#content {
+	max-width:1800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.tile {
+	margin:5px;
+	border:1px solid white;
 }

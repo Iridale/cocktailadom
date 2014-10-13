@@ -1,0 +1,12 @@
+#extra {
+}
+
+#extra .extra{
+	display:block;
+	height:70px;
+	line-height:70px;
+	vertical-align:middle;
+	width:100%;
+	text-align:center;
+	background-color:#B544B8;
+}

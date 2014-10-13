@@ -1,0 +1,49 @@
+#devis {
+	text-align:center;
+}
+#devis .text {
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+#devis .left {
+	text-align:left;
+}
+
+#devis .image_and_title {
+	text-align:center;
+	width:320px;
+	height:320px;
+	line-height:320px;
+	background-image:url("./resources/Jacquot.jpg");
+	display:inline-block;
+	float:left;
+}
+
+#devis .image_and_title span {
+	width:200px;
+	vertical-align:middle;
+	display:inline-block;
+	line-height:normal;
+	text-align:left;
+}
+
+#devis .speech {
+	text-align:center;
+	display:inline-block;
+	width:calc(100% - 328px);
+}
+
+#devis .speech_title {
+	text-align:center;
+	padding:15px 0;
+	margin-bottom:10px;
+	border-bottom:1px solid white;
+	display:inline-block;
+}
+
+#devis .speech_text {
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
