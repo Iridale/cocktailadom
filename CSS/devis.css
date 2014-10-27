@@ -15,17 +15,24 @@
 	width:320px;
 	height:320px;
 	line-height:320px;
-	background-image:url("./resources/Jacquot.jpg");
+	background-image:url("../resources/Jacquot.jpg");
+	background-position: center center;
+    background-size: cover;
 	display:inline-block;
 	float:left;
 }
-
+#devis .image_and_title:hover span {
+	text-decoration:underline;
+}
 #devis .image_and_title span {
 	width:200px;
 	vertical-align:middle;
 	display:inline-block;
 	line-height:normal;
 	text-align:left;
+	position:relative;
+	top:200px;
+	text-align:center;
 }
 
 #devis .speech {
