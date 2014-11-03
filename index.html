@@ -9,7 +9,7 @@
       			$("#video").load("./components/video.html");
     		});
 			$(function(){
-      			$("#devis").load("./components/devis.html");
+      			$("#whatsproduct").load("./components/whatsproduct1.html");
     		});
 			$(function(){
       			$("#golden_book").load("./components/golden_book.html");
@@ -25,7 +25,7 @@
     		});
 			$(function(){
       			$("#newsletter").load("./components/newsletter.html");
-    		});	
+    		});
 			$(function(){
       			$("#teaser").load("./components/teaser.html");
     		});
@@ -39,11 +39,13 @@
       			$("#footer").load("./components/footer.html");
     		});
 		</script>
+		<script src="./JS/DotNavigation/js/modernizr.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/extra.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/devis.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/whatsproduct.css">
+		<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">
 	</head>
 	
 	<body>
@@ -51,7 +53,17 @@
 		</header>
 		<div id="content">
 			<div id="video" class="tile"></div>
-			<div id="devis" class="tile"></div>
+			<div class="tile">
+				<div id="whatsproduct">
+				</div>
+				<div class="whatsproduct dotstyle dotstyle-hop">
+					<ul>
+						<li class="current"><a href="#">Cocktailadom</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Products</a></li>
+					</ul>
+				</div>
+			</div>
 			<div id="golden_book" class="tile"></div>
 			<div id="cocktails" class="tile"></div>
 			<div id="palmares" class="tile"></div>
@@ -62,5 +74,19 @@
 			<div id="extra" class="tile"></div>
 			<footer id="footer"></footer>
 		</div>
+		<script src="./JS/DotNavigation/js/dots.js"></script>
+ 		<script>
+			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
+				new DotNav( nav, {
+					callback : function( idx ) {
+						switch( idx ) {
+							case 0:$("#whatsproduct").load("./components/whatsproduct1.html");break;
+							case 1:$("#whatsproduct").load("./components/whatsproduct2.html");break;
+							case 2:$("#whatsproduct").load("./components/whatsproduct3.html");break;
+						}
+					}
+				} );
+			} );
+		</script>
 	</body>
 </html>
