@@ -1,0 +1,3 @@
+title,text,color
+title1,text1,#FF0000
+title2,text2,#00FF00

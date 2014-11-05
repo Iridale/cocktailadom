@@ -33,3 +33,31 @@ a:hover {
 	margin:5px;
 	border:1px solid white;
 }
+
+
+.golden_tile {
+	margin:3px;
+	width:600px;
+	height:250px;
+	text-align:center;
+}
+
+.golden_tile .title {
+	top:13%;
+	position:relative;
+}
+.golden_tile .line {
+	top:21%;
+	left:40%;
+	width:20%;
+	height:2px;
+	background:#f7d7ff;
+	position:relative;
+}
+
+.golden_tile .text {
+	top:33%;
+	left:15%;
+	position:relative;
+	width:70%;
+}
