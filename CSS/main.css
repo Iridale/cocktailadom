@@ -37,7 +37,6 @@ a:hover {
 
 .golden_tile {
 	margin:3px;
-	width:600px;
 	height:250px;
 	text-align:center;
 }
@@ -46,6 +45,7 @@ a:hover {
 	top:13%;
 	position:relative;
 }
+
 .golden_tile .line {
 	top:21%;
 	left:40%;
@@ -61,3 +61,20 @@ a:hover {
 	position:relative;
 	width:70%;
 }
+
+.backgroundImage {
+	background-position:center;
+	background-size:cover;
+}
+
+
+.simpleButton {
+	padding: 0.5em 3em;
+	border-radius:5px;
+	background-color:rgb(247, 247, 247);
+}
+
+.simpleButton:hover {
+	text-decoration:none;
+}
+	
