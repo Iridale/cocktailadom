@@ -1,5 +1,5 @@
 body {
-	background:rgb(9, 13, 71);
+	background:#050B45;
 	color:#F7D7FF;
 	font-family:Comic sans MS;
 	font-size:1.5em;
@@ -20,6 +20,7 @@ a {
 	text-decoration:none;
 }
 a:hover {
+	/*remove that when footer is ready with hyperlinks */
 	text-decoration:underline;
 }
 
@@ -72,9 +73,167 @@ a:hover {
 	padding: 0.5em 3em;
 	border-radius:5px;
 	background-color:rgb(247, 247, 247);
+	cursor:pointer;
 }
 
 .simpleButton:hover {
 	text-decoration:none;
 }
+
+.firstTile {
+	text-align:center;
+}
+
+.firstTile .firstTile_title{
+	display:block;
+	position:relative;
+	top:42%;
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+
+.firstTile .middle {
+	top:50%;
+	position:relative;
+	left:4%;
+}
+
+.firstTile .firstTile_button {
+	background-color:rgb(149, 57, 105);
+	color:white;
+}
+
+.firstTile .firstTile_button.play {
+	margin:0 5px;
+	background-color:transparent;
+	color:white;
+	border:2px solid #F7D7FF;
+	padding-left:4.3em;
+}
+
+.firstTile .play_triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 30px;
+	border-color: transparent transparent transparent white;
+	position:absolute;
+	top:4px;
+	left:49%;
+}
+
+
+.tile4 {
+	height:400px;
+}
+
+.tile4 .middle{
+	text-decoration:underline;
+	text-align:center;
+	height:100%;
+	line-height:5em;
+	font-weight:bold;
+}
+
+.trustList {
+	background-color:rgb(255, 230, 230);
+	color:black;
+	text-align:center;
+}
+
+.trustList .title {
+	top:0;
+	display:block;
+}
+
+.trustList .line {
+	width:70px;
+	position:relative;
+	border-bottom:1px solid black;
+}
+
+.trustList .trustList_logo {
+	height:323px;
+	width:100%;
+}
+
+.trustList .trustLogo {
+	width:24%;
+	height:100px;
+	display:inline-block;
+}
+
+
+.withPrice {
+	text-align:center;
+	color:white;
+}
+
+.withPrice .title {
+	top:25%;
+	position:relative;
+}
+
+.withPrice  .text {
+	top:43%;
+	max-width:60%;
+	position:relative;
+}
+
+.withPrice .price {
+	top:52%;
+	position:relative;
+	font-weight:bold;
+	font-size:1.3em;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.devisGratuitTile {
+	display:block;
+	height:70px;
+	line-height:70px;
+	vertical-align:middle;
+	width:100%;
+	text-align:center;
+	background-color:#B544B8;
+}
+
+.titleLineText {
+	height:100%;
+	color:white;
+}
+
+.titleLineText .title {
+	position:relative;
+	top:12%;
+	font-weight:bold;
+}
+
+.titleLineText .line {
+	position:relative;
+	top:17%;
+	width:100px;
+	border-bottom:1px solid white;
+}
+
+.titleLineText .text {
+	position:relative;
+	top:30%;
+	font-size:0.7em;
+	max-width:60%;
+}
+
+.devisButton {
+	border-radius:5px;
+	border:2px solid black;
+	background-color:transparent;
+	color:black;
+}
+
+
+
 	

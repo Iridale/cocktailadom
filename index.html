@@ -7,31 +7,7 @@
       			$("#menu").load("./components/menu.html");
     		});
 			$(function(){
-      			$("#video").load("./components/video.html");
-    		});
-			$(function(){
-      			$("#whatsproduct").load("./components/whatsproduct1.html");
-    		});
-			$(function(){
-      			$("#cocktails").load("./components/cocktails.html");
-    		});
-			$(function(){
-      			$("#palmares").load("./components/palmares.html");
-    		});
-			$(function(){
-      			$("#bar").load("./components/bar.html");
-    		});
-			$(function(){
       			$("#newsletter").load("./components/newsletter.html");
-    		});
-			$(function(){
-      			$("#teaser").load("./components/teaser.html");
-    		});
-			$(function(){
-      			$("#atelier").load("./components/atelier.html");
-    		});
-			$(function(){
-      			$("#extra").load("./components/extra.html");
     		});
 			$(function(){
       			$("#footer").load("./components/footer.html");
@@ -42,7 +18,6 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/extra.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/whatsproduct.css">
 		<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">
 	</head>
@@ -51,16 +26,23 @@
 		<header id="menu">
 		</header>
 		<div id="content">
-			<div id="video" class="tile"></div>
+			<div class="tile firstTile backgroundImage" style="height:400px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
+				<span class="firstTile_title">Barman à domicile</span>
+				<div class="middle">
+					<a class="simpleButton firstTile_button">Devis Gratuit</a>
+					<a class="simpleButton firstTile_button play"><span class="play_triangle"></span>Nos soirées en images</a>
+				</div>
+			</div>
 			<div class="tile">
 				<div id="whatsproduct">
+					<div class="speech"><div class="speech_title">Cocktailadom ?</div><div class="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Avec tous le matériel et notre Bar Lumineux nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.</div></div>
 				</div>
-				<div class="whatsproduct dotstyle dotstyle-hop">
-					<ul>
-						<li class="current"><a href="#">Cocktailadom</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Products</a></li>
-					</ul>
+				<div class="whatsproduct dots">
+					<div style="display:table;padding:3em 0;width:100%;">
+						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Demande de devis</span></CENTER></span>
+						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Nous vous recontactons</span></CENTER></span>
+						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Nous ferons le reste</span></CENTER></span>
+					</div>
 				</div>
 			</div>
 			
@@ -75,23 +57,62 @@
 						<div class="golden_tile" style="background-color:#923462;">
 							<div class="title">Mme. M</div>
 							<div class="line"></div>
-							<div class="text">Tous les invités ont été ravis et étonné de la prestations des barmen !</div>	
+							<div class="text">Tous les invités ont été ravis et étonnés de la prestation des barmen !</div>	
 						</div>
 					</div>
 					<div class="backgroundImage" style="display:table-cell;background-image:url('./resources/pictures/10379864_680046572031082_1463811215216811677_o.jpg');text-align:center;height:500px;">
 						<div style="position:relative;top:20%;font-size:1.2em;color:white;">Inspirez-vous des cocktails les plus appréciés</div>
-						<a style="position:relative;top:40%;" class="simpleButton" href="./cocktails.html">En savoir plus</a>
+						<a style="position:relative;top:40%;color:black;" class="simpleButton" href="./cocktails.html">En savoir plus</a>
 					</div>
 				</div>
 			</div>
 			
-			<div id="cocktails" class="tile"></div>
-			<div id="palmares" class="tile"></div>
-			<div id="bar" class="tile"></div>
+			<div class="tile tile4">
+				<div style="display:table;width:100%;height:100%;">
+					<div class="backgroundImage" style="display:table-cell;width:600px;height:100%;background-image:url('./resources/pictures/10441324_693851013983971_290662459868875430_n.jpg');">
+						<div class="middle">Un bar lumineux !<br>+<br>Des Barmen !</div>
+					</div>
+					<div class="trustList" style="display:table-cell;">
+						<div class="title">Ils nous ont fait confiance :</div>
+						<span class="line"></span>
+						<div class="trustList_logo" >
+							<div class="trustLogo" style="background-color:red;"></div>
+							<div class="trustLogo" style="background-color:blue;"></div>
+							<div class="trustLogo" style="background-color:green;"></div>
+							<div class="trustLogo" style="background-color:purple;"></div>							<div class="trustLogo" style="background-color:red;"></div>
+							<div class="trustLogo" style="background-color:pink;"></div>
+							<div class="trustLogo" style="background-color:yellow;"></div>
+							<div class="trustLogo" style="background-color:orange;"></div>							<div class="trustLogo" style="background-color:red;"></div>
+							<div class="trustLogo" style="background-color:grey;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tile">
+				<div style="display:table;height:500px;width:100%;">
+					<div class="backgroundImage withPrice" style="display:table-cell;width:900px;height:100%;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
+						<CENTER style="height:100%;">
+							<div class="title">Cocktail party</div>
+							<div class="text">Des soirées originales avec un bar à Cocktail et des barmen chez vous</div>
+							<div class="price">A partir de €12/pers</div>
+						</CENTER>
+					</div>
+					<div style="display:table-cell;width:3px;"></div>
+					<div class="backgroundImage withPrice" style="display:table-cell;width:900px;height:100%;background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
+						<CENTER style="height:100%;">
+							<div class="title">L'atelier Cocktail</div>
+							<div class="text">Créez vos cocktails avec des barmen professionnels</div>
+							<div class="price">A partir de €18/pers</div>
+						</CENTER>
+					</div>
+				</div>
+			</div>
+			
 			<div id="newsletter" class="tile"></div>
-			<div id="teaser" class="tile"></div>
-			<div id="atelier" class="tile"></div>
-			<div id="extra" class="tile"></div>
+			<div class="tile">
+				<a href="#" class="devisGratuitTile">Devis Gratuit</a>
+			</div>
 			<footer id="footer"></footer>
 		</div>
 		<script src="./JS/DotNavigation/js/dots.js"></script>
@@ -100,9 +121,6 @@
 				new DotNav( nav, {
 					callback : function( idx ) {
 						switch( idx ) {
-							case 0:$("#whatsproduct").load("./components/whatsproduct1.html");break;
-							case 1:$("#whatsproduct").load("./components/whatsproduct2.html");break;
-							case 2:$("#whatsproduct").load("./components/whatsproduct3.html");break;
 						}
 					}
 				} );
