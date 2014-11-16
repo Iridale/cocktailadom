@@ -229,9 +229,28 @@ a:hover {
 
 .devisButton {
 	border-radius:5px;
-	border:2px solid black;
+	border:3px solid black;
 	background-color:transparent;
 	color:black;
+	font-weight:bold;
+	width:-moz-max-content;
+}
+
+.trait {
+	border-bottom:1px solid black;
+	width:70px;
+	margin:25px 0;
+}
+
+.speechPricing {
+	max-width:60%;
+	height:270px;
+}
+
+.pricing {
+	text-decoration:underline;
+	font-weight:bold;
+	margin-bottom:25px;
 }
 
 

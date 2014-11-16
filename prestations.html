@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/extra.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/devis.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/prestations.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/gallery.css">
 	</head>
 	
 	<body>
@@ -27,27 +28,34 @@
 		<div id="content">
 		
 		<div class="tile">
-			<div style="display:table;height:800px;width:100%;">
-				<div style="display:table-cell;width:50%;height:100%;">
-					<div class="backgroundImage" style="height:100%;width:100%;background-image:url('./resources/pictures/10358957_680046412031098_2313768233927593980_o.jpg');"></div>
-				</div>
-				<div style="display:table-cell;width:50%;height:100%;">
-					<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
-						<div style="height:100%;display:block;">
-							<!--<div style="height:300px;position:relative;top:0;">
-								Cocktailadom a tout prévu pour rendre vos soirées animées et originales.
-								Un service de barman proessionel pour vous servir et créer de délicieux cocktails tout au long de votre événement.
-								Avec tout le matériel et notre Bar Lumineux, nous nous déplaçons chez vous pour vous fair déguster des cocktails qui raviront vos invités.
-							</div>
-							<a href="#" class="simpleButton devisButton" style="position:relative;">
-								Demandez un devis
-							</a>-->
-						<div>
-					</CENTER>
-					<div class="backgroundImage" style="width:100%;height:50%;background:image:url('./resources/pictures/223457_489757637726644_558296788_n.jpg');"></div>
-				</div>
-				
-			</div>
+			<table style="height:1200px;width:100%;">
+				<tr>
+					<td style="width:50%;height:100%;">
+						<div class="backgroundImage" style="height:100%;width:100%;background-image:url('./resources/pictures/10358957_680046412031098_2313768233927593980_o.jpg');"></div>
+					</td>
+					<td style="width:50%;height:100%;">
+						<div style="width:100%;height:50%;background-color:pink;color:black;">
+							<table>
+								<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+									<div style="height:100%;display:block;">
+										<div style="max-width:80%;height:calc(100% - 190px);margin-top:90px;position:relative;top:0;">
+											Cocktailadom a tout prévu pour rendre vos soirées animées et originales.<br>
+											Un service de barman professionel pour vous servir et créer de délicieux cocktails tout au long de votre événement.<br>
+											Avec tout le matériel et notre Bar Lumineux, nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.
+										</div>
+										<div style="width:100%;height:100px;">
+										<a href="#" class="simpleButton devisButton" style="position:relative;top:15px;">
+											Demandez un devis
+										</a>
+										</div>
+									<div>
+								</CENTER>
+							</table>
+						</div>
+						<div class="backgroundImage" style="width:100%;height:50%;background-image:url('./resources/pictures/223457_489757637726644_558296788_n.jpg');"></div>
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div class="tile">
 			<div style="display:table;width:100%;height:300px;">
@@ -75,7 +83,31 @@
 				</div>
 			</div>
 		</div>
-		<div style="text-align:center;">
+		<div class="tile">
+			<table style="height:500px;width:100%;">
+				<tr>
+					<td style="width:50%;height:100%;text-align:center;background-color:pink;color:black;">
+						<CENTER>
+							<div class="trait"></div>
+							<div class="speechPricing">La Cocktail Party, c'est un service de barmen professionels à votre service.<br>
+							Equipés d'un bar lumineux, de la verrerie et de leur matériel, ils réalisent à la demande les cocktails que vous aurez choisis.</div>
+							<div class="pricing">A partir de 12€/p</div>
+							<a href="#" class="devisButton simpleButton">Demander un devis</a>
+						</CENTER>
+					</td>
+					<td style="width:50%;height:100%;text-align:center;background-color:pink;color:black;">
+						<CENTER>
+							<div class="trait"></div>
+							<div class="speechPricing">L'Atelier Cocktail, c'est une animation d'une à trois heures pour partager notre savoir faire sur la création de cocktails.<br>
+							Vous choisissez les cocktails que vous souhaitez apprendre à réaliser, l'atelier comprend une leçon théorique puis une leçon pratique !</div>
+							<div class="pricing">A partir de 18€/p</div>
+							<a href="#" class="devisButton simpleButton">Demander un devis</a>
+						</CENTER>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tile" style="text-align:center;">
 			<iframe id="viewer" src ="http://www.digicamsoft.com/iridale/Cocktailadom/index.html" width="100%" height="800"> </iframe> 
 		<div>
 		<footer id="footer"></footer>
