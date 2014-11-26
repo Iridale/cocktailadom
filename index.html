@@ -15,22 +15,35 @@
 		</script>
 		
 		<script src="./JS/DotNavigation/js/modernizr.min.js"></script>
+		
+
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/whatsproduct.css">
 		<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">
+		<link rel="stylesheet" type="text/css" href="./JS/ButtonMorph/resources/component.css">
 	</head>
 	
 	<body>
 		<header id="menu">
 		</header>
 		<div id="content">
-			<div class="tile firstTile backgroundImage" style="height:400px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
+			<div class="tile firstTile backgroundImage" style="height:600px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
 				<span class="firstTile_title">Barman à domicile</span>
 				<div class="middle">
 					<a class="simpleButton firstTile_button">Devis Gratuit</a>
-					<a class="simpleButton firstTile_button play"><span class="play_triangle"></span>Nos soirées en images</a>
+					<div class="play morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"><button type="button">Nos soirées en images</button>
+							<div class="morph-content">
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close">Fermer</span>
+										<div class="video-mockup">
+											<iframe width="420" height="315" src="https://www.youtube.com/embed/0Bmhjf0rKe8" frameborder="0" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div></div>
 				</div>
 			</div>
 			<div class="tile">
@@ -91,15 +104,14 @@
 			
 			<div class="tile">
 				<div style="display:table;height:500px;width:100%;">
-					<div class="backgroundImage withPrice" style="display:table-cell;width:900px;height:100%;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
+					<div class="backgroundImage withPrice" style="display:table-cell;width:50%;height:100%;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
 						<CENTER style="height:100%;">
 							<div class="title">Cocktail party</div>
 							<div class="text">Des soirées originales avec un bar à Cocktail et des barmen chez vous</div>
 							<div class="price">A partir de €12/pers</div>
 						</CENTER>
 					</div>
-					<div style="display:table-cell;width:3px;"></div>
-					<div class="backgroundImage withPrice" style="display:table-cell;width:900px;height:100%;background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
+					<div class="backgroundImage withPrice" style="display:table-cell;width:50%;height:100%;background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
 						<CENTER style="height:100%;">
 							<div class="title">L'atelier Cocktail</div>
 							<div class="text">Créez vos cocktails avec des barmen professionnels</div>
@@ -125,6 +137,16 @@
 					}
 				} );
 			} );
+		</script>
+		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
+		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
+		<script src="./JS/ButtonMorph/resources/classie.js"></script>
+		<script>
+			(function() {
+				new UIMorphingButton( document.querySelector( '.morph-button' ), {
+					closeEl : '.icon-close'
+				} );
+			})();
 		</script>
 	</body>
 </html>
