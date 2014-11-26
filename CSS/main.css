@@ -1,10 +1,19 @@
 body {
-	background:#050B45;
+	background:white;
 	color:#F7D7FF;
 	font-family:Comic sans MS;
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
+}
+
+table {
+	border-spacing:0;
+}
+
+td {
+	margin:0;
+	padding:0;
 }
 
 header {
@@ -31,7 +40,8 @@ a:hover {
 #content {
 }
 
-.tile {
+.tile, footer {
+	max-width:1425px;
 }
 
 
@@ -80,6 +90,7 @@ a:hover {
 
 .firstTile {
 	text-align:center;
+	max-width:none;
 }
 
 .firstTile .firstTile_title{
