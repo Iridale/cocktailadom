@@ -155,7 +155,6 @@ a:hover {
 }
 
 .trustList {
-	background-color:rgb(255, 230, 230);
 	color:black;
 	text-align:center;
 }
@@ -267,6 +266,19 @@ a:hover {
 	text-decoration:underline;
 	font-weight:bold;
 	margin-bottom:25px;
+}
+
+.gallery {
+	border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    height: 120px;
+    margin-left: 20px;
+    position: relative;
+    width: 256px;
+}
+
+.gallery-display{
+	
 }
 
 

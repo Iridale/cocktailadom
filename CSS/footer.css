@@ -28,17 +28,14 @@
 	vertical-align:middle;
 }
 
-#footer table {
+#footer ul {
+	width:20%;
 	display:block;
-	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
+	float:left;
+	padding:0;
+	list-style:none;
 }
-
-#footer td {
-	width:200px;
-}
-#footer td a.mailto {
+#footer li a.mailto {
 	color:inherit;
 	text-decoration:underline;
 }

@@ -1,6 +1,5 @@
 #whatsproduct {
 	text-align:center;
-	background-color:rgb(255, 230, 230);
 	color:black;
 }
 #whatsproduct .text {
@@ -60,7 +59,6 @@
 
 
 .whatsproduct.dots  {
-	background-color:rgb(255, 230, 230);
 	color:rgb(149, 57, 105);
 }
 

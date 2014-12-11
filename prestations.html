@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<script src="./JS/jquery.js"></script>
+		<script src="./thumbelina-master/thumbelina.js"></script>
 		<script>
 			$(function(){
       			$("#menu").load("./components/menu.html");
@@ -11,6 +12,15 @@
     		});
 			
 		</script>
+		 <script type="text/javascript">
+            $(function(){
+                
+                $('#slider').Thumbelina({
+                    $bwdBut:$('#slider .left'),    // Selector to left button.
+                    $fwdBut:$('#slider .right')    // Selector to right button.
+                });
+            })
+        </script>   
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
@@ -18,6 +28,7 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/devis.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/prestations.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/gallery.css">
+		<link rel="stylesheet" type="text/css" href="./thumbelina-master/thumbelina.css">
 	</head>
 	
 	<body>
@@ -45,7 +56,7 @@
 											Avec tout le matériel et notre Bar Lumineux, nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.
 										</div>
 										<div style="width:100%;height:100px;">
-										<a href="#" class="simpleButton devisButton" style="position:relative;top:15px;">
+										<a href="./devis.html" class="simpleButton devisButton" style="position:relative;top:15px;">
 											Demandez un devis
 										</a>
 										</div>
@@ -93,7 +104,7 @@
 							<div class="speechPricing">La Cocktail Party, c'est un service de barmen professionels à votre service.<br>
 							Equipés d'un bar lumineux, de la verrerie et de leur matériel, ils réalisent à la demande les cocktails que vous aurez choisis.</div>
 							<div class="pricing">A partir de 12€/p</div>
-							<a href="#" class="devisButton simpleButton">Demander un devis</a>
+							<a href="./devis.html" class="devisButton simpleButton">Demander un devis</a>
 						</CENTER>
 					</td>
 					<td style="width:50%;height:100%;text-align:center;background-color:pink;color:black;">
@@ -102,15 +113,35 @@
 							<div class="speechPricing">L'Atelier Cocktail, c'est une animation d'une à trois heures pour partager notre savoir faire sur la création de cocktails.<br>
 							Vous choisissez les cocktails que vous souhaitez apprendre à réaliser, l'atelier comprend une leçon théorique puis une leçon pratique !</div>
 							<div class="pricing">A partir de 18€/p</div>
-							<a href="#" class="devisButton simpleButton">Demander un devis</a>
+							<a href="./devis.html" class="devisButton simpleButton">Demander un devis</a>
 						</CENTER>
 					</td>
 				</tr>
 			</table>
 		</div>
+		<div class="tile" style="background-color:blue;">
+			<span>Notre gallery</span>
+		</div>
+		<div class="tile" style="height:600px;">
+			<div class="gallery-display">
+				<img id="gallery-img>">
+			</div>
+			<div id="slider" class="gallery">
+				<div class="thumbelina-but horiz left">˂</div>
+				<div style="position:absolute;overflow:hidden;width:100%;height:100%;">
+				<ul class="thumbelina" style="left: -177px;">
+					<li style="display: block;"><img src="./resources/pictures/7079_737139306321808_8060656348670700276_n.jpg"></li>
+					<li style="display: block;"><img src="./resources/pictures/28999_490823537620054_2046928707_n.jpg"></li>
+					<li style="display: block;"><img src="./resources/pictures/59702_490536737648734_11857388_n.jpg"></li>
+					<li style="display: block;"><img src="./resources/pictures/61702_490536780982063_1337184300_n.jpg"></li>
+					<li style="display: block;"><img src="./resources/pictures/61750_490536767648731_989962910_n.jpg"></li>
+					<li style="display: block;"><img src="./resources/pictures/68959_490536700982071_271488117_n.jpg"></li>
+				</ul></div>
+				<div class="thumbelina-but horiz right">˃</div>
+			</div>
+		</div>
 		<div class="tile" style="text-align:center;">
-			<iframe id="viewer" src ="http://www.digicamsoft.com/iridale/Cocktailadom/index.html" width="100%" height="800"> </iframe> 
-		<div>
+		
 		<footer id="footer"></footer>
 		</CENTER>
 		</div>
