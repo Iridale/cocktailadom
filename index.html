@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<script src="./JS/jquery.js"></script>
+		
 		<script>
 			$(function(){
       			$("#menu").load("./components/menu.html");
@@ -40,7 +41,7 @@
 									<div class="content-style-video">
 										<span class="icon icon-close">Fermer</span>
 										<div class="video-mockup">
-											<iframe width="420" height="315" src="https://www.youtube.com/embed/0Bmhjf0rKe8" frameborder="0" allowfullscreen></iframe>
+										<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/101046012">Présentation Cocktailadom</a> from <a href="http://vimeo.com/user15858888">Filmagination</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 										</div>
 									</div>
 								</div>
@@ -53,22 +54,22 @@
 				</div>
 				<div class="whatsproduct dots">
 					<div style="display:table;padding:3em 0;width:100%;">
-						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Demande de devis</span></CENTER></span>
-						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Nous vous recontactons</span></CENTER></span>
-						<span style="display:table-cell;"><CENTER><span class="image"></span><span>Nous ferons le reste</span></CENTER></span>
+						<span style="display:table-cell;"><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></span>
+						<span style="display:table-cell;"><CENTER><span class="image recontact"></span><span>Nous vous recontactons</span></CENTER></span>
+						<span style="display:table-cell;"><CENTER><span class="image cocktail"></span><span>Nous ferons le reste</span></CENTER></span>
 					</div>
 				</div>
 			</div>
 			
-			<div id="golden_book" class="tile">
+			<div id="golden_book" class="tile cubes">
 				<div style="display:table;width:100%;">
-					<div style="width:600px;display:table-cell;">
-						<div class="golden_tile" style="background-color:#6588DE;">
+					<div style="width:600px;display:table-cell;padding:0;">
+						<div class="golden_tile" style="background-color:RGB(115, 143, 212);color:white;">
 							<div class="title">Chef marketing Bouygues télécom</div>
 							<div class="line"></div>
 							<div class="text">Le bar a cocktail après la réunion, ils ont adoré l'idée</div>
 						</div>
-						<div class="golden_tile" style="background-color:#923462;">
+						<div class="golden_tile" style="background-color:RGB(191, 82, 135);color:white;">
 							<div class="title">Mme. M</div>
 							<div class="line"></div>
 							<div class="text">Tous les invités ont été ravis et étonnés de la prestation des barmen !</div>	
@@ -81,7 +82,7 @@
 				</div>
 			</div>
 			
-			<div class="tile tile4">
+			<div class="tile tile4 cubes">
 				<div style="display:table;width:100%;height:100%;">
 					<div class="backgroundImage" style="display:table-cell;width:600px;height:100%;background-image:url('./resources/pictures/10441324_693851013983971_290662459868875430_n.jpg');">
 						<div class="middle">Un bar lumineux !<br>+<br>Des Barmen !</div>
@@ -90,20 +91,22 @@
 						<div class="title">Ils nous ont fait confiance :</div>
 						<span class="line"></span>
 						<div class="trustList_logo">
-							<div class="trustLogo" style="background-color:red;"></div>
-							<div class="trustLogo" style="background-color:blue;"></div>
-							<div class="trustLogo" style="background-color:green;"></div>
-							<div class="trustLogo" style="background-color:purple;"></div>							<div class="trustLogo" style="background-color:red;"></div>
-							<div class="trustLogo" style="background-color:pink;"></div>
-							<div class="trustLogo" style="background-color:yellow;"></div>
-							<div class="trustLogo" style="background-color:orange;"></div>							<div class="trustLogo" style="background-color:red;"></div>
-							<div class="trustLogo" style="background-color:grey;"></div>
+							<div class="trustLogo" style="background-image:url(image/client_ieseg.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_kwintet.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_Latina.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_pologne.png);"></div>							
+							<div class="trustLogo" style="background-image:url(image/client_salon.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_bouygues.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_Decathlon.png);"></div>
+							<div class="trustLogo" style="background-image:url(image/client_NRJ.png);"></div>							
+							<div class="trustLogo" style="background-image:url(image/client_BMW.png);"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="tile">
+            <div id="newsletter" class="tile"></div>
+
+			<div class="tile cubes">
 				<div style="display:table;height:500px;width:100%;">
 					<div class="backgroundImage withPrice" style="display:table-cell;width:50%;height:100%;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
 						<CENTER style="height:100%;">
@@ -122,8 +125,7 @@
 				</div>
 			</div>
 			
-			<div id="newsletter" class="tile"></div>
-			<div class="tile">
+			<div class="tile cubes">
 				<a href="./devis.html" class="devisGratuitTile">Devis Gratuit</a>
 			</div>
 			<footer id="footer"></footer>

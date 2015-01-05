@@ -12,14 +12,15 @@
 }
 
 #menuContainer li  {
-	height:150px;
-	line-height:150px;
+	height:82px;
+	line-height:82px;
 }
 
 #menuContainer .menuItem {
 	display:table-cell;
 	vertical-align:middle;
 	cursor:default;
+    width: 12%;
 }
 
 #menuContainer .menuItem.left {
@@ -28,11 +29,14 @@
 #menuContainer .menuItem.right{
 	float:right;
 }
+#menuContainer .menuItem.center{
+	float:left;
+    width: 76%;
+}
 
 
 
 #menuContainer  .menuItem a {
-	margin:0 20px;
 	color:white;
 	font-size:0.6em;
 }
@@ -43,4 +47,5 @@
 
 #menuContainer  #logo {
 	cursor:pointer;
+    margin-top: 10px;
 }

@@ -19,9 +19,41 @@
 	</head>
 	
 	<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script type="text/javascript">var zdcvjhr1mb0pjk;(function(d, t) {
+		var s = d.createElement(t), options = {
+		'userName':'iridale',
+		'formHash':'zdcvjhr1mb0pjk',
+		'autoResize':true,
+		'height':'732',
+		'async':true,
+		'host':'wufoo.com',
+		'header':'show',
+		'ssl':true};
+		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+		s.onload = s.onreadystatechange = function() {
+		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+		try { zdcvjhr1mb0pjk = new WufooForm();zdcvjhr1mb0pjk.initialize(options);zdcvjhr1mb0pjk.display(); } catch (e) {}};
+		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+		})(document, 'script');
+	</script>
+
+	<div id="menu"></div>
+	<div class="fb-post" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500"></div>
+	<!--<div id="wufoo-zdcvjhr1mb0pjk">
+		Fill out my <a href="https://iridale.wufoo.com/forms/zdcvjhr1mb0pjk">online form</a>.
+	</div>-->
 	
-	DEVIS.HTML
-	
+
+	<div id="footer"></div>
 	</body>
 	
 </html>

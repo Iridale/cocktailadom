@@ -1,7 +1,7 @@
 body {
 	background:white;
-	color:#F7D7FF;
-	font-family:Comic sans MS;
+	color:RGB(24, 23, 23);
+	font-family:PT Sans, sans-serif;
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
@@ -19,11 +19,11 @@ td {
 header {
     text-align: center;
     vertical-align: middle;
-	color:rgb(119, 108, 156);
+	color:RGB(255, 255, 255);
 	display:table;
 	width:100%;
-	background-color:rgba(0, 0, 0, 0.3);
-	position:fixed;
+	background-color:rgba(29, 32, 64, 0.3);
+	position:absolute;
 	top:0;
 }
 
@@ -40,10 +40,17 @@ a:hover {
 #content {
 }
 
+.tile{
+    padding: 100px 0;
+}
+
 .tile, footer {
 	max-width:1425px;
 }
 
+.cubes{
+  padding: 0;   
+}
 
 .golden_tile {
 	height:250px;
@@ -60,7 +67,7 @@ a:hover {
 	left:40%;
 	width:20%;
 	height:2px;
-	background:#f7d7ff;
+	background:white;
 	position:relative;
 }
 
@@ -80,7 +87,7 @@ a:hover {
 .simpleButton {
 	padding: 0.5em 3em;
 	border-radius:5px;
-	background-color:rgb(247, 247, 247);
+	background-color:white;
 	cursor:pointer;
 }
 
@@ -100,7 +107,7 @@ a:hover {
 	color:white;
 	text-decoration:underline;
 	font-weight:bold;
-	font-size:1.2em;
+	font-size:1.8em;
 }
 
 
@@ -110,7 +117,7 @@ a:hover {
 }
 
 .firstTile .firstTile_button {
-	background-color:rgb(149, 57, 105);
+	background-color:RGB(191, 82, 135);
 	color:white;
 }
 .firstTile .play {
@@ -152,6 +159,7 @@ a:hover {
 	height:100%;
 	line-height:5em;
 	font-weight:bold;
+    color:white;
 }
 
 .trustList {
@@ -179,6 +187,9 @@ a:hover {
 	width:24%;
 	height:100px;
 	display:inline-block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 70% auto;
 }
 
 

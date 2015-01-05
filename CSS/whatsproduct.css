@@ -59,19 +59,31 @@
 
 
 .whatsproduct.dots  {
-	color:rgb(149, 57, 105);
+	color:RGB(191, 82, 135);
 }
 
 .whatsproduct.dots .image{
 	height:100px;
 	width:100px;
 	border-radius:50%;
-	border:2px solid rgb(149, 57, 105);
+	border:2px solid RGB(191, 82, 135);
 	display:block;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
+.whatsproduct.dots .demand{
+    background-image: url(../image/click_icn.png) ;
+}
 
+.whatsproduct.dots .recontact{
+    background-image: url(../image/phone_icn.png);
+}
 
-
+.whatsproduct.dots .cocktail{
+    background-color: RGB(191, 82, 135);
+    background-image: url(../image/cocktail_icn.png);
+}
 
 
