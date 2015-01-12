@@ -1,6 +1,6 @@
 #whatsproduct {
 	text-align:center;
-	color:black;
+	color:white;
 }
 #whatsproduct .text {
 	padding-top:1em;
@@ -46,7 +46,7 @@
 	text-align:center;
 	padding:15px 0;
 	margin-bottom:10px;
-	border-bottom:1px solid black;
+	border-bottom:1px solid white;
 	display:inline-block;
 }
 

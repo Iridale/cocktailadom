@@ -1,6 +1,6 @@
 body {
-	background:white;
-	color:RGB(24, 23, 23);
+	background:#1D2040;
+	color:white;
 	font-family:PT Sans, sans-serif;
 	font-size:1.5em;
 	margin:0;
@@ -100,19 +100,10 @@ a:hover {
 	max-width:none;
 }
 
-.firstTile .firstTile_title{
-	display:block;
-	position:relative;
-	top:42%;
-	color:white;
-	text-decoration:underline;
-	font-weight:bold;
-	font-size:1.8em;
-}
 
 
 .firstTile .middle {
-	top:50%;
+	top:45%;
 	position:relative;
 }
 
@@ -209,6 +200,26 @@ a:hover {
 	position:relative;
 }
 
+.hover-opacity:hover {
+	background-color:rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity .appear {
+	opacity:0;
+	
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+    /* Standard syntax */
+    transition-property: opacity;
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+}
+.hover-opacity:hover .appear {
+	opacity:1;
+}
+
 .withPrice .price {
 	top:52%;
 	position:relative;
@@ -218,14 +229,16 @@ a:hover {
 	cursor:pointer;
 }
 
+.devisGratuitTile:hover {
+	background-color:#eaa;
+}
 .devisGratuitTile {
-	display:block;
-	height:70px;
-	line-height:70px;
+	line-height:150px;
 	vertical-align:middle;
-	width:100%;
 	text-align:center;
-	background-color:#B544B8;
+	padding:1em 2em;
+	background-color:#fbb;
+	border-radius:5px;
 }
 
 .titleLineText {
