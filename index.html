@@ -35,7 +35,8 @@
             $(function(){
                 $('#slider .thumb').click(function(){
                     $('#gallery-display-img').attr('src', this.src.replace('-TH', ''));
-                    $('#gallery-display-img').fadeIn(2000);
+                    $('#gallery-display-img').css('display', 'none');
+                    $('#gallery-display-img').fadeIn(1000);
 				});
             })
         </script>
