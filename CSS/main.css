@@ -217,7 +217,9 @@ a:hover {
 	max-width:60%;
 	position:relative;
 }
-
+.hover-opacity {
+	transition:background-color 0.7s;
+}
 .hover-opacity:hover {
 	background-color:rgba(0, 0, 0, 0.7);
 }
