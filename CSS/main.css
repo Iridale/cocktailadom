@@ -83,6 +83,21 @@ a:hover {
 	background-size:cover;
 }
 
+#gallery-display {
+	width:calc(100% - 100px);
+	height:550px;
+	margin-left:50px;
+	overflow:hidden;
+	padding-top:25px;
+    transition: opacity 1s;
+}
+
+#gallery-display img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
 
 .simpleButton {
 	padding: 0.5em 3em;
@@ -116,6 +131,8 @@ a:hover {
 	top:18px;
 	border-radius:5px;
 	overflow:hidden;
+}
+.firstTile .icon-close {
 	cursor:pointer;
 }
 .firstTile .play > button {
@@ -125,7 +142,8 @@ a:hover {
 	height:57px !important;
 }
 .firstTile .play.open > .morph-content {
-	height:400px !important;
+	height:800px !important;
+	width:800px;
 }
 
 .firstTile .play_triangle {
@@ -296,9 +314,9 @@ a:hover {
 	border-bottom: 1px solid #aaa;
     border-top: 1px solid #aaa;
     height: 120px;
-    margin-left: 20px;
+    margin-left: 50px;
     position: relative;
-    width: 256px;
+    width: calc(100% - 100px);
 }
 
 .gallery-display{
