@@ -45,7 +45,7 @@ a:hover {
 }
 
 .tile, footer {
-	max-width:1425px;
+	//max-width:1425px;
 }
 
 .cubes{
@@ -208,14 +208,12 @@ a:hover {
 }
 
 .withPrice .title {
-	top:25%;
-	position:relative;
+	padding-top:20%;
 }
 
 .withPrice  .text {
-	top:43%;
+	padding-top:10%;
 	max-width:60%;
-	position:relative;
 }
 .hover-opacity {
 	transition:background-color 0.7s;
@@ -241,8 +239,7 @@ a:hover {
 }
 
 .withPrice .price {
-	top:52%;
-	position:relative;
+	padding-top:10%;
 	font-weight:bold;
 	font-size:1.3em;
 	text-decoration:underline;
