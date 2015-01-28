@@ -1,0 +1,51 @@
+
+#menuContainer {
+	
+}
+
+#menuContainer ul  {
+	display: block;
+    float: left;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+#menuContainer li  {
+	height:82px;
+	line-height:82px;
+}
+
+#menuContainer .menuItem {
+	display:table-cell;
+	vertical-align:middle;
+	cursor:default;
+    width: 8%;
+}
+
+#menuContainer .menuItem.left {
+	float:left;
+}
+#menuContainer .menuItem.right{
+	float:right;
+}
+#menuContainer .menuItem.center{
+	float:left;
+    width: 76%;
+}
+
+
+
+#menuContainer  .menuItem a {
+	color:white;
+	font-size:0.6em;
+}
+#menuContainer  .menuItem a:hover {
+	text-shadow: 1px -1px rgb(160, 160, 160);
+	text-decoration:none;
+}
+
+#menuContainer  #logo {
+	cursor:pointer;
+    margin-top: 10px;
+}

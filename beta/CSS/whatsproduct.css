@@ -1,0 +1,71 @@
+#whatsproduct {
+	text-align:center;
+	color:white;
+}
+#whatsproduct .text {
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+#whatsproduct .left {
+	text-align:left;
+}
+
+#whatsproduct .image_and_title {
+	text-align:center;
+	width:320px;
+	height:320px;
+	line-height:320px;
+	background-image:url("../resources/Jacquot.jpg");
+	background-position: center center;
+    background-size: cover;
+	display:inline-block;
+	float:left;
+}
+#whatsproduct .image_and_title:hover span {
+	text-decoration:underline;
+}
+#whatsproduct .image_and_title span {
+	width:200px;
+	vertical-align:middle;
+	display:inline-block;
+	line-height:normal;
+	text-align:left;
+	position:relative;
+	top:200px;
+	text-align:center;
+}
+
+#whatsproduct .speech {
+	display:inline-block;
+}
+
+.whatsproduct.dots  {
+	color:RGB(191, 82, 135);
+}
+
+.whatsproduct.dots .image{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	border:2px solid RGB(191, 82, 135);
+	display:block;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.whatsproduct.dots .demand{
+    background-image: url(../image/click_icn.png) ;
+}
+
+.whatsproduct.dots .recontact{
+    background-image: url(../image/phone_icn.png);
+}
+
+.whatsproduct.dots .cocktail{
+    background-color: RGB(191, 82, 135);
+    background-image: url(../image/cocktail_icn.png);
+}
+
+
