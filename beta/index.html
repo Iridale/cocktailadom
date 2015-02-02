@@ -16,9 +16,6 @@
       			$("#menu").load("./components/menu.html");
     		});
 			$(function(){
-      			$("#newsletter").load("./components/newsletter.html");
-    		});
-			$(function(){
       			$("#footer").load("./components/footer.html");
     		});
 			$(function(){
@@ -66,9 +63,9 @@
 		</header>
 		<div id="content">
 		<CENTER>
-			<div class="tile firstTile backgroundImage" style="height:600px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
+			<div class="firstTile backgroundImage" style="height:600px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
 				<div class="middle">
-					<a href="./devis.html" class="simpleButton firstTile_button">Devis Gratuit</a>
+					<a href="./devis.html" class="simpleButton devisButton">Demande de Devis</a>
 					<div class="play morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"><button type="button">Nos soirées en images</button>
 							<div class="morph-content">
 								<div>
@@ -104,7 +101,7 @@
 							</div></div>
 				</div>
 			</div>
-			<div class="tile">
+			<div style="margin-top:100px;">
 				<div id="whatsproduct">
 					<div class="speech"><div class="speech_title">Cocktailadom ?</div><div class="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Avec tous le matériel et notre Bar Lumineux nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.</div></div>
 				</div>
@@ -117,78 +114,27 @@
 				</div>
 			</div>
 			
-			<div id="video" class="tile">
+			<div id="video">
+				<div class="videoSpeech">
+					<div class="text">
+						<span class="firstLetter">V</span>ivez à votre tour l'ambiance c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m en vidéo et rendez votre événement inoubliable !!
+					</div>
+				</div>
 				<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				
 			</div>
 			
-			<div id="prestations" class="tile">
+			<div id="prestations">
 			</div>
-			<!--<div class="tile cubes" style="padding-bottom:100px;">
-				<div style="display:table;height:500px;width:100%;">
-					<div class="backgroundImage withPrice" style="display:table-cell;width:50%;height:100%;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
-						<CENTER class="hover-opacity" style="height:100%;">
-							<div class="title">Cocktail party</div>
-							<div class="text appear">Des soirées originales avec un bar à Cocktail et des barmen chez vous</div>
-							<a href="./devis.html" class="price appear">A partir de €12/pers</a>
-						</CENTER>
-					</div>
-					<div class="backgroundImage withPrice" style="display:table-cell;width:50%;height:100%;background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
-						<CENTER class="hover-opacity" style="height:100%;">
-							<div class="title">L'atelier Cocktail</div>
-							<div class="text appear">Créez vos cocktails avec des barmen professionnels</div>
-							<a href="./devis.html" class="price appear">A partir de €18/pers</a>
-						</CENTER>
-					</div>
-				</div>
-			</div>-->
 			
-			<!--<div id="golden_book" class="tile cubes">
-				<div style="display:table;width:100%;">
-					<div class="backgroundImage" style="display:table-cell;background-image:url('./resources/pictures/10379864_680046572031082_1463811215216811677_o.jpg');text-align:center;height:600px;">
-						<div style="position:relative;font-size:1.2em;color:white;">Des cocktails que vos invités apprécieront</div>
-					</div>
-					<div style="display:table-cell;width:700px;">
-						<div class="speech" style="top:80px;position:relative;font-size:1.2em;">
-							<span class="speech_title">Optez pour une soirée originale</span>
-							<ul class="speech_text" style="list-style:none;">
-								<li>Mariage</li>
-								<li>Soirée</li>
-								<li>Anniversaire</li>
-								<li>Séminaire d'entreprise</li>
-								<li>Enterrement de vie de jeune fille</li>
-								<li>...</li>
-							</ul>
-						</div>
-					</div>
+			<div>
+				<div>
+					
 				</div>
-			</div>-->
+			</div>
 			
-			<!--<div class="tile tile4 cubes">
-				<div style="display:table;width:100%;height:100%;">
-					<div class="backgroundImage" style="display:table-cell;width:600px;height:100%;background-image:url('./resources/pictures/10441324_693851013983971_290662459868875430_n.jpg');">
-						<div class="middle">Un bar lumineux !<br>+<br>Des Barmen !</div>
-					</div>
-					<div class="trustList" style="display:table-cell;">
-						<div class="title">Ils nous ont fait confiance :</div>
-						<span class="line"></span>
-						<div class="trustList_logo">
-							<div class="trustLogo" style="background-image:url(image/client_ieseg.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_kwintet.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_Latina.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_pologne.png);"></div>							
-							<div class="trustLogo" style="background-image:url(image/client_salon.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_bouygues.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_Decathlon.png);"></div>
-							<div class="trustLogo" style="background-image:url(image/client_NRJ.png);"></div>							
-							<div class="trustLogo" style="background-image:url(image/client_BMW.png);"></div>
-						</div>
-					</div>
-				</div>
-			</div>-->
-			
-			<div class="tile cubes" style="height:150px;">
-				<a href="./devis.html" class="devisGratuitTile">Devis Gratuit</a>
+			<div style="height:150px;display:block;">
+				<a href="./devis.html" class="simpleButton devisButton" style="top:60px;position:relative;">Demande de Devis</a>
 			</div>
 			<footer id="footer"></footer>
 			</CENTER>
@@ -207,6 +153,15 @@
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
 		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
 		<script src="./JS/ButtonMorph/resources/classie.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.tangentiellement(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-26236422-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 		<script>
 			(function() {
 				new UIMorphingButton( document.querySelector( '.morph-button' ), {
