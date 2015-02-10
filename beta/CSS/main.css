@@ -85,8 +85,14 @@ a {
 	height:53px !important;
 }
 .firstTile .play.open > .morph-content {
-	height:800px !important;
-	width:800px;
+    height: 800px !important;
+    left: 34% !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    top: 12% !important;
+    width: 800px;
 }
 
 .hover-opacity {

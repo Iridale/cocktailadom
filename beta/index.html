@@ -32,18 +32,18 @@
                     $bwdBut:$('#slider .left'),    // Selector to left button.
                     $fwdBut:$('#slider .right')    // Selector to right button.
                 });
-
             })
-            
         </script>
         
         <!-- Create image picker -->
         <script type="text/javascript">
             $(function(){
+            	$('#gallery-display-img').on('load', function() {
+                    $('#gallery-display-img').fadeIn(1000);
+				});
                 $('#slider .thumb').click(function(){
                     $('#gallery-display-img').attr('src', this.src.replace('-TH', ''));
-                    $('#gallery-display-img').css('display', 'none');
-                    $('#gallery-display-img').fadeIn(1000);
+					$('#gallery-display-img').css('display', 'none');
 				});
             })
         </script>
