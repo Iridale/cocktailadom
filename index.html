@@ -32,18 +32,18 @@
                     $bwdBut:$('#slider .left'),    // Selector to left button.
                     $fwdBut:$('#slider .right')    // Selector to right button.
                 });
-
             })
-            
         </script>
         
         <!-- Create image picker -->
         <script type="text/javascript">
             $(function(){
+            	$('#gallery-display-img').on('load', function() {
+                    $('#gallery-display-img').fadeIn(1000);
+				});
                 $('#slider .thumb').click(function(){
                     $('#gallery-display-img').attr('src', this.src.replace('-TH', ''));
-                    $('#gallery-display-img').css('display', 'none');
-                    $('#gallery-display-img').fadeIn(1000);
+					$('#gallery-display-img').css('display', 'none');
 				});
             })
         </script>
@@ -117,7 +117,7 @@
 			<div id="video">
 				<div class="videoSpeech">
 					<div class="text">
-						<span class="firstLetter">D</span>écouvrez a travers notre vidéo l'ambiance magic qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravir vos convives ... Cocktailadom !</div>
+						<span class="firstLetter">D</span>écouvrez à travers notre vidéo l'ambiance magique qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravire vos convives... Cocktailadom !</div>
 				</div>
 				<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				
