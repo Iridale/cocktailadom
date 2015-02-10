@@ -256,7 +256,15 @@ a {
     background-position: 50%;
 }
 
+.dots .current .image {
+    background-color: RGB(191, 82, 135);
+}
+
 .dots .demand{
+    background-image: url("../resources/image/click_icn.png") ;
+}
+
+.dots .current .demand{
     background-image: url("../resources/image/click_icn.png") ;
 }
 
@@ -264,8 +272,14 @@ a {
     background-image: url("../resources/image/phone_icn.png");
 }
 
+.dots .current .recontact{
+    background-image: url("../resources/image/phone_icn.png");
+}
+
 .dots .cocktail{
-    background-color: RGB(191, 82, 135);
+    background-image: url("../resources/image/cocktail_icn.png");
+}
+.dots .current .cocktail{
     background-image: url("../resources/image/cocktail_icn.png");
 }
 
@@ -279,5 +293,11 @@ a {
 	display:inline-block;
 }
 
-
+.dots.dotstyle-flip li .image {
+	transition:transform 0.3s ease, opacity 0.3s ease; 
+}
+.dots.dotstyle-flip li.current .image {
+	-webkit-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
 
