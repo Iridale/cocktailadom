@@ -140,7 +140,7 @@ a {
 	max-width:1000px;
 }
 
-.speech_title {
+#speech_title {
 	text-align:center;
 	padding:15px 0;
 	margin-bottom:10px;
@@ -148,7 +148,7 @@ a {
 	display:inline-block;
 }
 
-.speech_text {
+#speech_text {
 	width:75%;
 	margin-left:auto;
 	margin-right:auto;
@@ -220,6 +220,7 @@ a {
 #whatsproduct {
 	text-align:center;
 	color:white;
+	height:200px;
 }
 #whatsproduct .text {
 	padding-top:1em;
@@ -230,40 +231,15 @@ a {
 	text-align:left;
 }
 
-#whatsproduct .image_and_title {
-	text-align:center;
-	width:320px;
-	height:320px;
-	line-height:320px;
-	background-image:url("../resources/Jacquot.jpg");
-	background-position: center center;
-    background-size: cover;
-	display:inline-block;
-	float:left;
-}
-#whatsproduct .image_and_title:hover span {
-	text-decoration:underline;
-}
-#whatsproduct .image_and_title span {
-	width:200px;
-	vertical-align:middle;
-	display:inline-block;
-	line-height:normal;
-	text-align:left;
-	position:relative;
-	top:200px;
-	text-align:center;
-}
-
 #whatsproduct .speech {
 	display:inline-block;
 }
 
-.whatsproduct.dots  {
+.dots  {
 	color:RGB(191, 82, 135);
 }
 
-.whatsproduct.dots .image{
+.dots .image{
 	height:100px;
 	width:100px;
 	border-radius:50%;
@@ -274,17 +250,27 @@ a {
     background-position: 50%;
 }
 
-.whatsproduct.dots .demand{
-    background-image: url(../image/click_icn.png) ;
+.dots .demand{
+    background-image: url("../resources/image/click_icn.png") ;
 }
 
-.whatsproduct.dots .recontact{
-    background-image: url(../image/phone_icn.png);
+.dots .recontact{
+    background-image: url("../resources/image/phone_icn.png");
 }
 
-.whatsproduct.dots .cocktail{
+.dots .cocktail{
     background-color: RGB(191, 82, 135);
-    background-image: url(../image/cocktail_icn.png);
+    background-image: url("../resources/image/cocktail_icn.png");
+}
+
+.dots ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.dots ul li{
+	width:30%;
+	display:inline-block;
 }
 
 

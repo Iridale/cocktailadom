@@ -14,16 +14,13 @@
 		<script>
 			$(function(){
       			$("#menu").load("./components/menu.html");
-    		});
-			$(function(){
       			$("#footer").load("./components/footer.html");
-    		});
-			$(function(){
       			$("#prestations").load("./components/prestationsComponent.html");
     		});
 		</script>
 		
 		<script src="./JS/DotNavigation/js/modernizr.min.js"></script>
+		
         <!-- Include Thumbelina script. -->
         <script type="text/javascript" src="thumbelina-master/thumbelina.js"></script>
 		
@@ -35,7 +32,9 @@
                     $bwdBut:$('#slider .left'),    // Selector to left button.
                     $fwdBut:$('#slider .right')    // Selector to right button.
                 });
+
             })
+            
         </script>
         
         <!-- Create image picker -->
@@ -53,7 +52,7 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/whatsproduct.css">
-		<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">
+		<!--<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">-->
 		<link rel="stylesheet" type="text/css" href="./JS/ButtonMorph/resources/component.css">
 		<link rel="stylesheet" type="text/css" href="./thumbelina-master/thumbelina.css">
 	</head>
@@ -91,26 +90,27 @@
 													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png"></li>
 												</ul>
 											</div>
-											<div class="thumbelina-but horiz right">&#707;</div>								
+											<div class="thumbelina-but horiz right">&#707;</div>
 										</div>
 										<div id="gallery-display">
 											<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png">
 										</div>
 									</div>
 								</div>
-							</div></div>
+							</div>
+						</div>
 				</div>
 			</div>
-			<div style="margin-top:100px;">
-				<div id="whatsproduct">
-					<div class="speech"><div class="speech_title">Cocktailadom ?</div><div class="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Avec tous le matériel et notre Bar Lumineux nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.</div></div>
+			<div style="margin-top:100px;margin-bottom:100px;">
+				<div id="whatsproduct" style="margin-bottom:50px;">
+					<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
 				</div>
-				<div class="whatsproduct dots">
-					<div style="display:table;padding:3em 0;width:100%;">
-						<span style="display:table-cell;"><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></span>
-						<span style="display:table-cell;"><CENTER><span class="image recontact"></span><span>Nous vous recontactons</span></CENTER></span>
-						<span style="display:table-cell;"><CENTER><span class="image cocktail"></span><span>Nous ferons le reste</span></CENTER></span>
-					</div>
+				<div class="dots dotstyle dotstyle-flip">
+					<ul>
+						<li><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></li>
+						<li><CENTER><span class="image recontact"></span><span>Nous vous recontactons</span></CENTER></li>
+						<li><CENTER><span class="image cocktail"></span><span>Nous ferons le reste</span></CENTER></li>
+					</ul>
 				</div>
 			</div>
 			
@@ -141,19 +141,49 @@
 		</div>
 		<script src="./JS/DotNavigation/js/dots.js"></script>
  		<script>
+	           	function updateProductDot(idx) {
+	   				var title;
+					var text;
+					switch( idx ) {
+					case 0:
+						title='Cocktailadom ?';
+						text='Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !'
+						break;
+					case 1:
+						title='A votre écoute';
+						text='Nous étudions votre demande, et nous vous envoyons une proposition dans les plus brefs délais, en fonction des disponibilités des resources dont vous avez besoin.<br>Au plus tôt vous nous contactez, meilleures sont vos chances de voir tous vos besoins satisfaits.';
+						break;
+					case 2:
+						title='Laissez-vous guider';
+						text='Notre équipe se prépare pour votre événement.<br>Nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.<br>Avec nos accessoires et nos barmen professionnels, vos invités seront ravis !';
+						break;
+					}
+					
+					var elt = document.getElementById('speech_title');
+					if (elt != null)
+						elt.innerHTML = title;
+					elt = document.getElementById('speech_text');
+					if (elt != null)
+						elt.innerHTML = text;
+					$('#speech_title').css('display', 'none');
+					$('#speech_text').css('display', 'none');
+                    $('#speech_title').fadeIn(1000, function() {
+    	                $('#speech_text').fadeIn(1000);
+                    });
+	           	}
+
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
 				new DotNav( nav, {
 					callback : function( idx ) {
-						switch( idx ) {
-						}
+						updateProductDot(idx);
 					}
 				} );
-			} );
+			})
 		</script>
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
 		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
 		<script src="./JS/ButtonMorph/resources/classie.js"></script>
-		<script>
+		<!--<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 				m=s.tangentiellement(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -161,7 +191,7 @@
 
 			ga('create', 'UA-26236422-1', 'auto');
 			ga('send', 'pageview');
-		</script>
+		</script>-->
 		<script>
 			(function() {
 				new UIMorphingButton( document.querySelector( '.morph-button' ), {
