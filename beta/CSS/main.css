@@ -205,8 +205,9 @@ a {
     line-height: 1em;
     position: absolute;
     transition-duration: 1s;
-    transition-property: left, right, top, bottom;
+    transition-property: left, right, top, bottom, background-color;
 	min-height:21px;
+	max-height:21px;
 }
 
 .current.absoluteButton {
@@ -215,6 +216,8 @@ a {
     right: 0 !important;
     top: 33%;
 	cursor:default;
+	max-height:inherit;
+	background-color:black;
 }
 
 .current.absoluteButton .reveal {
