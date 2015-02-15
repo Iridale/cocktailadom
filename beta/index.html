@@ -125,13 +125,13 @@
 		</div>
 		
 		<div id="prestations" style="position:absolute;top:300%;height:150%;width:100%;">
-			<div id="prestaCell0" class="prestationsCell current backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
+			<div id="prestaCell0" class="prestationsCell backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
 			</div>
 			<div id="prestaCell1" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
 			</div>
 			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
 			</div>
-			<div id="presta0" onclick='javascript:showPresta(0);' class="simpleButton current absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
+			<div id="presta0" onclick='javascript:showPresta(0);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
 				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -250,7 +250,7 @@
 		<!--<div style="height:150px;display:block;position:absolute;top:350%;">
 			<a href="./devis.html" class="simpleButton devisButton" style="top:60px;position:relative;">Demande de Devis</a>
 		</div>-->
-		<footer id="footer"></footer>
+		<footer id="footer" style="top:350%;"></footer>
 		<script src="./JS/DotNavigation/js/dots.js"></script>
  		<script>
 	           	function updateProductDot(idx) {
@@ -304,6 +304,7 @@
 						$('#presta' + i).removeClass(className);
 					}
 				}
+				$('#footer').css('top', '450%');
 				$('#prestations').css('height', '150%');
 				$('#presta' + i + ' .reveal').css('display', 'none');
                 $('#presta' + i + ' .reveal').fadeIn(1000, function(){});
