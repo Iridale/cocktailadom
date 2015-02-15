@@ -5,6 +5,7 @@ body {
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
+	min-width:800px;
 }
 
 table {
@@ -58,6 +59,10 @@ a {
 .firstTile {
 	text-align:center;
 	max-width:none;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
 }
 
 .firstTile .middle {
@@ -118,6 +123,8 @@ a {
 	opacity:1;
 }
 
+//OLD CSS
+
 .devisButton {
 	border-radius:5px;
 	border:3px solid white;
@@ -163,12 +170,13 @@ a {
 
 .prestationsCell {
     display: inline-block;
-    height: 400px;
+    height: 33%;
     width: 33%;
+	opacity:0.35;
 }
 
-.prestationsCell .simpleButton {
-	line-height:400px;
+.prestationsCell.current {
+    opacity: 1;
 }
 
 .firstTile .simpleButton {
@@ -191,6 +199,29 @@ a {
 	font-weight:bold;
 }
 
+.absoluteButton {
+	top:12%;
+	bottom:81%;
+    line-height: 1em;
+    position: absolute;
+    transition-duration: 1s;
+    transition-property: left, right, top, bottom;
+	min-height:21px;
+}
+
+.current.absoluteButton {
+    bottom: 0;
+    left: 0 !important;
+    right: 0 !important;
+    top: 33%;
+	cursor:default;
+}
+
+.current.absoluteButton .reveal {
+	visibility:visible !important;
+	opacity:1 !important;
+}
+
 
 
 #video {
@@ -201,6 +232,7 @@ a {
 	float:left;
 	width:calc(100% - 850px);
 	height:100%;
+	text-align:center;
 }
 .videoSpeech .text {
 	max-width: 70%;
@@ -208,6 +240,7 @@ a {
     position: relative;
     text-overflow: ellipsis;
     top: 20%;
+	margin:auto;
 }
 #video iframe {
 	display:block;
@@ -227,6 +260,7 @@ a {
 	text-align:center;
 	color:white;
 	height:200px;
+	margin-top:7%;
 }
 #whatsproduct .text {
 	padding-top:1em;
@@ -265,7 +299,7 @@ a {
 }
 
 .dots .current .demand{
-    background-image: url("../resources/image/click_icn.png") ;
+    background-image: url("../resources/image/click_icn_white.png") ;
 }
 
 .dots .recontact{
@@ -273,14 +307,14 @@ a {
 }
 
 .dots .current .recontact{
-    background-image: url("../resources/image/phone_icn.png");
+    background-image: url("../resources/image/phone_icn_white.png");
 }
 
 .dots .cocktail{
     background-image: url("../resources/image/cocktail_icn.png");
 }
 .dots .current .cocktail{
-    background-image: url("../resources/image/cocktail_icn.png");
+    background-image: url("../resources/image/cocktail_icn_white.png");
 }
 
 .dots ul{
