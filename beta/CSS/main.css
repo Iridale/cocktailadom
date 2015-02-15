@@ -208,6 +208,7 @@ a {
     transition-property: left, right, top, bottom, background-color;
 	min-height:21px;
 	max-height:21px;
+	white-space:nowrap;
 }
 
 .current.absoluteButton {
