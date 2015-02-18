@@ -209,9 +209,10 @@ a {
 	min-height:21px;
 	max-height:21px;
 	white-space:nowrap;
+	font-size:1.3vw;
 }
 
-.current.absoluteButton {
+.absoluteButton.current {
     bottom: 0;
     left: 0 !important;
     right: 0 !important;
@@ -219,6 +220,8 @@ a {
 	cursor:default;
 	max-height:inherit;
 	background-color:black;
+	font-size:inherit;
+	white-space:inherit;
 }
 
 .current.absoluteButton .reveal {
