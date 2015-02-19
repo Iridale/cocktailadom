@@ -293,9 +293,6 @@
 			})
 		</script>
 		<script>
-			$(function(){
-				window.currentPresta = -1;
-			})
 			function showPresta(presta) {
 				var className ='current';
 				for (var i = 0 ; i < 3 ; i++) {
@@ -313,6 +310,9 @@
                 $('#presta' + i + ' .reveal').fadeIn(1000, function(){});
                 window.currentPresta = presta;
 			}
+			$(function(){
+				window.currentPresta = -1;
+			})
 		</script>
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
 		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
