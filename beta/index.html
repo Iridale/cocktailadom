@@ -308,8 +308,13 @@
 						$('#presta' + i).attr('onclick', 'javascript:showPresta(' + i + ');');
 					}
 				}
-				$('#footer').css('top', 'calc(400% + 310px)');
-				$('#prestations').css('height', 'calc(100% + 310px)');
+				if (presta === -1) {
+					$('#footer').css('top', 'calc(300% + 310px)');
+					$('#prestations').css('height', '310px');
+				} else {
+					$('#footer').css('top', 'calc(400% + 310px)');
+					$('#prestations').css('height', 'calc(100% + 310px)');
+				}
 				$('#presta' + i + ' .reveal').css('display', 'none');//Not working; can't figure out why
                 $('#presta' + i + ' .reveal').fadeIn(1000, function(){});//Not working; can't figure out why
                 if (animated)
