@@ -297,7 +297,7 @@
 			function showPresta(presta) {
 				var className ='current';
 				for (var i = 0 ; i < 3 ; i++) {
-					if ((presta != currentPresta) && (i === presta)) {
+					if ((presta != currentPresta && (i === presta)) {
 						$('#prestaCell' + i).addClass(className);
 						$('#presta' + i).addClass(className);
 					} else {
@@ -309,6 +309,7 @@
 				$('#prestations').css('height', 'calc(100% + 310px)');
 				$('#presta' + i + ' .reveal').css('display', 'none');
                 $('#presta' + i + ' .reveal').fadeIn(1000, function(){});
+                currentPresta = presta;
 			}
 		</script>
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
