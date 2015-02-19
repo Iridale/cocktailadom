@@ -125,13 +125,13 @@
 		</div>
 		
 		<div id="prestations" style="position:absolute;top:300%;height:calc(100% + 310px);width:100%;">
-			<div id="prestaCell0" class="prestationsCell backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
+			<div id="prestaCell0"  onclick='javascript:showPresta(0);' class="prestationsCell backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
 			</div>
-			<div id="prestaCell1" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
+			<div id="prestaCell1" onclick='javascript:showPresta(1);' class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
 			</div>
-			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
+			<div id="prestaCell2" onclick='javascript:showPresta(2);' class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
 			</div>
-			<div id="presta0" onclick='javascript:showPresta(0);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
+			<div id="presta0" class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
 				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -167,7 +167,7 @@
 					</table>
 				</div>
 			</div>
-			<div id="presta1" onclick='javascript:showPresta(1);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
+			<div id="presta1" class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
 				<div id="atelier_cocktail" class="reveal" style="visibility:hidden;opacity:0;">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -203,7 +203,7 @@
 					</table>
 				</div>
 			</div>
-			<div id="presta2" onclick='javascript:showPresta(2);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
+			<div id="presta2" class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
 				<div id="bar_mojito" class="reveal" style="visibility:hidden;opacity:0;">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -293,10 +293,11 @@
 			})
 		</script>
 		<script>
-			function showPresta(presta){
+			var currentPresta = -1;
+			function showPresta(presta) {
 				var className ='current';
 				for (var i = 0 ; i < 3 ; i++) {
-					if (i === presta) {
+					if ((presta != currentPresta) && (i === presta)) {
 						$('#prestaCell' + i).addClass(className);
 						$('#presta' + i).addClass(className);
 					} else {
