@@ -131,7 +131,7 @@
 			</div>
 			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
 			</div>
-			<div id="presta0" onclick='javascript:showPresta(0);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
+			<div id="presta0" onclick='javascript:showPresta(0, true);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
 				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -165,7 +165,7 @@
 					</table>
 				</div>
 			</div>
-			<div id="presta1" onclick='javascript:showPresta(1);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
+			<div id="presta1" onclick='javascript:showPresta(1, true);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
 				<div id="atelier_cocktail" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -199,7 +199,7 @@
 					</table>
 				</div>
 			</div>
-			<div id="presta2" onclick='javascript:showPresta(2);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
+			<div id="presta2" onclick='javascript:showPresta(2, true);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
 				<div id="bar_mojito" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
@@ -235,10 +235,7 @@
 			</div>
 		</div>
 		
-		<div>
-			<div>
-				
-			</div>
+		<div id="prestationsAnchor" style="position: absolute;top: calc(300% + 310px);">
 		</div>
 		
 		<!--<div style="height:150px;display:block;position:absolute;top:350%;">
@@ -287,10 +284,16 @@
 			})
 		</script>
 		<script>
-			function hidePresta() {
-				showPresta(-1);
+		
+			function scrollToAnchor(aid){
+    			var aTag = $(aid);
+    			$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 			}
-			function showPresta(presta) {
+			
+			function hidePresta() {
+				showPresta(-1, false);
+			}
+			function showPresta(presta, animated) {
 				var className ='current';
 				for (var i = 0 ; i < 3 ; i++) {
 					if (i === presta) {
@@ -305,8 +308,10 @@
 				}
 				$('#footer').css('top', 'calc(400% + 310px)');
 				$('#prestations').css('height', 'calc(100% + 310px)');
-				$('#presta' + i + ' .reveal').css('display', 'none');
-                $('#presta' + i + ' .reveal').fadeIn(1000, function(){});
+				$('#presta' + i + ' .reveal').css('display', 'none');//Not working; can't figure out why
+                $('#presta' + i + ' .reveal').fadeIn(1000, function(){});//Not working; can't figure out why
+                if (animated)
+	                scrollToAnchor('#prestationsAnchor');
 			}
 		</script>
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
