@@ -287,14 +287,19 @@
 			})
 		</script>
 		<script>
+			function hidePresta() {
+				showPresta(-1);
+			}
 			function showPresta(presta) {
 				var className ='current';
 				for (var i = 0 ; i < 3 ; i++) {
 					if (i === presta) {
 						$('#prestaCell' + i).addClass(className);
+						$('#prestaCell' + i).attr('onclick', 'javascript:hidePresta();');
 						$('#presta' + i).addClass(className);
 					} else {
 						$('#prestaCell' + i).removeClass(className);
+						$('#prestaCell' + i).attr('onclick', '');
 						$('#presta' + i).removeClass(className);
 					}
 				}
