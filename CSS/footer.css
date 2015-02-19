@@ -1,3 +1,8 @@
+#footer {
+	position:absolute;
+	width:100%;
+	text-align:center;
+}
 #footer .container{
 	margin-top:10px;
 	margin-bottom:10px;

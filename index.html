@@ -15,7 +15,6 @@
 			$(function(){
       			$("#menu").load("./components/menu.html");
       			$("#footer").load("./components/footer.html");
-      			$("#prestations").load("./components/prestationsComponent.html");
     		});
 		</script>
 		
@@ -47,6 +46,8 @@
 				});
             })
         </script>
+		
+
         
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
@@ -60,84 +61,187 @@
 	<body>
 		<header id="menu">
 		</header>
-		<div id="content">
-		<CENTER>
-			<div class="firstTile backgroundImage" style="height:600px;background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
-				<div class="middle">
-					<a href="./devis.html" class="simpleButton devisButton">Demande de Devis</a>
-					<div class="play morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"><button type="button">Nos soirées en images</button>
-							<div class="morph-content">
-								<div>
-									<div class="content-style-video">
-										<span class="icon icon-close">Fermer</span>
-										<div id="slider" class="gallery">
-											<div class="thumbelina-but horiz left">&#706;</div>
-											<div style="position:absolute;overflow:hidden;width:100%;height:100%;">
-												<ul class="thumbelina" style="left: -177px;">
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery1-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery2-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery3-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery4-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery5-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery6-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery7-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery8-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery9-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery10-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery11-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery12-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery13-TH.png"></li>
-													<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png"></li>
-												</ul>
-											</div>
-											<div class="thumbelina-but horiz right">&#707;</div>
-										</div>
-										<div id="gallery-display">
-											<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png">
-										</div>
+		<div class="firstTile backgroundImage" style="background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
+			<div class="middle">
+				<a href="./devis.html" class="simpleButton devisButton">Demande de Devis</a>
+				<div class="play morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"><button type="button">Nos soirées en images</button>
+					<div class="morph-content">
+						<div>
+							<div class="content-style-video">
+								<span class="icon icon-close">Fermer</span>
+								<div id="slider" class="gallery">
+									<div class="thumbelina-but horiz left">&#706;</div>
+									<div style="position:absolute;overflow:hidden;width:100%;height:100%;">
+										<ul class="thumbelina" style="left: -177px;">
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery1-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery2-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery3-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery4-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery5-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery6-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery7-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery8-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery9-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery10-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery11-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery12-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery13-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png"></li>
+										</ul>
 									</div>
+									<div class="thumbelina-but horiz right">&#707;</div>
+								</div>
+								<div id="gallery-display">
+									<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png">
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-			<div style="margin-top:100px;margin-bottom:100px;">
+		</div>
+		<div style="position:absolute;top:100%;height:100%;width:100%;">
+			<CENTER>
 				<div id="whatsproduct" style="margin-bottom:50px;">
 					<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
 				</div>
 				<div class="dots dotstyle dotstyle-flip">
 					<ul>
-						<li><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></li>
+						<li class="current"><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></li>
 						<li><CENTER><span class="image recontact"></span><span>Nous vous recontactons</span></CENTER></li>
 						<li><CENTER><span class="image cocktail"></span><span>Installation de votre Bar éphémère</span></CENTER></li>
 					</ul>
 				</div>
-			</div>
-			
-			<div id="video">
-				<div class="videoSpeech">
-					<div class="text">
-						<span class="firstLetter">D</span>écouvrez à travers notre vidéo l'ambiance magique qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravire vos convives... Cocktailadom !</div>
-				</div>
-				<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				
-			</div>
-			
-			<div id="prestations">
-			</div>
-			
-			<div>
-				<div>
-					
-				</div>
-			</div>
-			
-			<div style="height:150px;display:block;">
-				<a href="./devis.html" class="simpleButton devisButton" style="top:60px;position:relative;">Demande de Devis</a>
-			</div>
-			<footer id="footer"></footer>
 			</CENTER>
 		</div>
+		
+		<div id="video" style="position:absolute;top:200%;height:100%;width:100%;">
+			<div class="videoSpeech">
+				<div class="text">
+					<span class="firstLetter">D</span>écouvrez à travers notre vidéo l'ambiance magique qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravire vos convives... Cocktailadom !</div>
+			</div>
+			<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			
+		</div>
+		
+		<div id="prestations" style="position:absolute;top:300%;height:310px;width:100%;">
+			<div id="prestaCell0" class="prestationsCell backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
+			</div>
+			<div id="prestaCell1" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
+			</div>
+			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
+			</div>
+			<div id="presta0" onclick='javascript:showPresta(0, true);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
+				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+					<table style="height:100%;width:100%;">
+						<tr>
+							<td style="width:50%;height:100%;">
+								<div class="backgroundImage" style="height:100%;width:100%;background-image:url('./resources/pictures/10358957_680046412031098_2313768233927593980_o.jpg');"></div>
+							</td>
+							<td style="width:50%;height:100%;">
+								<div style="width:100%;height:100%;">
+									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+										<div style="display:block;">
+											<div style="color:white;max-width:60%;margin-top:100px;position:relative;top:0;">
+												<span style="font-weight:bold;">La Cocktail Party</span>
+												<br>
+												<br>
+												<span>Un service de barman professionel pour vous servir et créer de délicieux cocktails tout au long de votre événement.</span>
+												<br>
+												<br>
+												<span>Avec tout le matériel et notre Bar Lumineux, nous nous déplaçons chez vous pour vous faire déguster des cocktails qui raviront vos invités.</span>
+											</div>
+											<div style="width:100%;height:150px;position:relative;margin-top:100px;">
+												<div style="color:white;margin-bottom:25px;">A partir de 12€/pers.</div>
+												<a href="./devis.html" class="simpleButton devisButton" style="position:relative;top:15px;">
+													Demandez un devis
+												</a>
+											</div>
+										</div>
+									</CENTER>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="presta1" onclick='javascript:showPresta(1, true);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
+				<div id="atelier_cocktail" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+					<table style="height:100%;width:100%;">
+						<tr>
+							<td style="width:50%;height:100%;">
+								<div style="width:100%;height:100%;">
+									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+										<div style="display:block;">
+											<div style="color:white;max-width:60%;margin-top:100px;position:relative;top:0;">
+												<span style="font-weight:bold;">L'atelier Cocktail</span>
+												<br>
+												<br>
+												<span>C'est une animation d'une à trois heures où nous partageons notre savoir faire sur la création de cocktails.</span>
+												<br>
+												<br>
+												<span>Vous choisissez les cocktails, et vos invités participent à une leçon théorique, puis pratique.</span>
+											</div>
+											<div style="width:100%;height:150px;position:relative;margin-top:100px;">
+												<div style="color:white;margin-bottom:25px;">A partir de 18€/pers.</div>
+												<a href="./devis.html" class="simpleButton devisButton" style="position:relative;top:15px;">
+													Demandez un devis
+												</a>
+											</div>
+										</div>
+									</CENTER>
+								</div>
+							</td>
+							<td style="width:50%;height:100%;">
+								<div class="backgroundImage" style="height:100%;width:100%;background-image:url('./resources/pictures/524839_494570337245374_1279148127_n.jpg');"></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="presta2" onclick='javascript:showPresta(2, true);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
+				<div id="bar_mojito" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+					<table style="height:100%;width:100%;">
+						<tr>
+							<td style="width:50%;height:100%;">
+								<div class="backgroundImage" style="height:100%;width:100%;background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');"></div>
+							</td>
+							<td style="width:50%;height:100%;">
+								<div style="width:100%;height:100%;">
+									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+										<div style="display:block;">
+											<div style="color:white;max-width:60%;margin-top:200px;position:relative;top:0;">
+												<span style="font-weight:bold;">Le bar à Mojito</span>
+												<br>
+												<br>
+												<span>Equipés d'un bar lumineux, de la verrerie et de leur matériel, nos barmen réalisent à la demande des Mojitos.</span>
+												<br>
+												<br>
+												<span>Qu'il soit royal, à la framboise ou tout simplement lui-même, redécouvrez ce grand classique sous des saveurs insoupçonnées.</span>
+											</div>
+											<div style="width:100%;height:150px;position:relative;margin-top:100px;">
+												<div style="color:white;margin-bottom:25px;">A partir de 18€/pers.</div>
+												<a href="./devis.html" class="simpleButton devisButton" style="position:relative;top:15px;">
+													Demandez un devis
+												</a>
+											</div>
+										</div>
+									</CENTER>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div id="prestationsAnchor" style="position: absolute;top: calc(300% + 310px);">
+		</div>
+		
+		<!--<div style="height:150px;display:block;position:absolute;top:350%;">
+			<a href="./devis.html" class="simpleButton devisButton" style="top:60px;position:relative;">Demande de Devis</a>
+		</div>-->
+		<footer id="footer" style="top:calc(300% + 310px);"></footer>
 		<script src="./JS/DotNavigation/js/dots.js"></script>
  		<script>
 	           	function updateProductDot(idx) {
@@ -178,6 +282,44 @@
 					}
 				} );
 			})
+		</script>
+		<script>
+		
+			function scrollToAnchor(aid){
+    			var aTag = $(aid);
+    			$('html,body').animate({scrollTop: aTag.offset().top},1000);
+			}
+			
+			function hidePresta() {
+				showPresta(-1, false);
+			}
+			function showPresta(presta, animated) {
+				var className ='current';
+				for (var i = 0 ; i < 3 ; i++) {
+					if (i === presta) {
+						$('#prestaCell' + i).addClass(className);
+						$('#prestaCell' + i).attr('onclick', 'javascript:hidePresta();');
+						$('#presta' + i).addClass(className);
+						$('#presta' + i).attr('onclick', '');
+					} else {
+						$('#prestaCell' + i).removeClass(className);
+						$('#prestaCell' + i).attr('onclick', '');
+						$('#presta' + i).removeClass(className);
+						$('#presta' + i).attr('onclick', 'javascript:showPresta(' + i + ');');
+					}
+				}
+				if (presta === -1) {
+					$('#footer').css('top', 'calc(300% + 310px)');
+					$('#prestations').css('height', '310px');
+				} else {
+					$('#footer').css('top', 'calc(400% + 310px)');
+					$('#prestations').css('height', 'calc(100% + 310px)');
+				}
+				$('#presta' + i + ' .reveal').css('display', 'none');//Not working; can't figure out why
+                $('#presta' + i + ' .reveal').fadeIn(1000, function(){});//Not working; can't figure out why
+                if (animated)
+	                scrollToAnchor('#prestationsAnchor');
+			}
 		</script>
 		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
 		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
