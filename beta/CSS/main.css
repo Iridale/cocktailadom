@@ -170,7 +170,7 @@ a {
 
 .prestationsCell {
     display: inline-block;
-    height: 33%;
+    height: 310px;
     width: 33%;
 	opacity:0.35;
 }
@@ -200,7 +200,7 @@ a {
 }
 
 .absoluteButton {
-	top:12%;
+	top:130px;
 	bottom:81%;
     line-height: 1em;
     position: absolute;
@@ -218,7 +218,7 @@ a {
     bottom: 0;
     left: 0 !important;
     right: 0 !important;
-    top: 33%;
+    top: 310px;
 	cursor:default;
 	max-height:inherit;
 	background-color:black;
