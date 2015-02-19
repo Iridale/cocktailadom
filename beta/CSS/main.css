@@ -206,10 +206,12 @@ a {
     position: absolute;
     transition-duration: 1s;
     transition-property: left, right, top, bottom, background-color;
+    transition-timing-function: ease-in-out;
 	min-height:21px;
 	max-height:21px;
 	white-space:nowrap;
 	font-size:1.3vw;
+	
 }
 
 .absoluteButton.current {
