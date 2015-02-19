@@ -300,10 +300,12 @@
 						$('#prestaCell' + i).addClass(className);
 						$('#prestaCell' + i).attr('onclick', 'javascript:hidePresta();');
 						$('#presta' + i).addClass(className);
+						$('#presta' + i).attr('onclick', '');
 					} else {
 						$('#prestaCell' + i).removeClass(className);
 						$('#prestaCell' + i).attr('onclick', '');
 						$('#presta' + i).removeClass(className);
+						$('#presta' + i).attr('onclick', 'javascript:showPresta(' + presta + ');');
 					}
 				}
 				$('#footer').css('top', 'calc(400% + 310px)');
