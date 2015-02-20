@@ -59,6 +59,7 @@
 	</head>
 	
 	<body>
+		<div id="top"></div>
 		<div id="menu">
 		</div>
 		<div class="firstTile backgroundImage" style="background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
@@ -283,7 +284,7 @@
 		</script>
 		<script type="text/javascript">
 		
-			function scrollToAnchor(aid){
+			function scrollToId(aid){
     			var aTag = $(aid);
     			$('html,body').animate({scrollTop: aTag.offset().top},1000);
 			}
@@ -314,7 +315,7 @@
 					$('#prestations').css('height', 'calc(100% + 310px)');
 				}
                 if (animated)
-	                scrollToAnchor('#prestationsAnchor');
+	                scrollToId('#prestationsAnchor');
 			}
 		</script>
 		<script type="text/javascript" src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
