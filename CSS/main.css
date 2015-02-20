@@ -231,13 +231,15 @@ a {
 
 .current.absoluteButton .reveal {
 	opacity:1 !important;
+	visibility:visible;
 }
 
 
-.current.absoluteButton .reveal {
+.absoluteButton .reveal {
 	transition-property:opacity;
 	transition-delay:1s;
 	transition-duration:1s;
+	visibility:hidden;
 }
 
 
