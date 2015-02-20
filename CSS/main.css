@@ -215,7 +215,6 @@ a {
 	max-height:21px;
 	white-space:nowrap;
 	font-size:1.3vw;
-	
 }
 
 .absoluteButton.current {
@@ -231,10 +230,15 @@ a {
 }
 
 .current.absoluteButton .reveal {
-	visibility:visible !important;
 	opacity:1 !important;
 }
 
+
+.current.absoluteButton .reveal {
+	transition-property:opacity;
+	transition-delay:1s;
+	transition-duration:1s;
+}
 
 
 #video {

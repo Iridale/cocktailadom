@@ -130,7 +130,7 @@
 			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
 			</div>
 			<div id="presta0" onclick='javascript:showPresta(0, true);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
-				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+				<div id="cocktail_party" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
@@ -164,7 +164,7 @@
 				</div>
 			</div>
 			<div id="presta1" onclick='javascript:showPresta(1, true);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
-				<div id="atelier_cocktail" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+				<div id="atelier_cocktail" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
@@ -198,7 +198,7 @@
 				</div>
 			</div>
 			<div id="presta2" onclick='javascript:showPresta(2, true);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
-				<div id="bar_mojito" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+				<div id="bar_mojito" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
@@ -313,8 +313,6 @@
 					$('#footer').css('top', 'calc(400% + 310px)');
 					$('#prestations').css('height', 'calc(100% + 310px)');
 				}
-				$('#presta' + i + ' .reveal').css('display', 'none');//Not working; can't figure out why
-                $('#presta' + i + ' .reveal').fadeIn(1000, function(){});//Not working; can't figure out why
                 if (animated)
 	                scrollToAnchor('#prestationsAnchor');
 			}
