@@ -17,6 +17,10 @@ td {
 	padding:0;
 }
 
+.center{
+	text-align:center;
+}
+
 #menu {
     text-align: center;
     vertical-align: middle;
@@ -294,6 +298,7 @@ a {
 	border-radius:50%;
 	border:2px solid RGB(191, 82, 135);
 	display:block;
+	margin:auto;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50%;
