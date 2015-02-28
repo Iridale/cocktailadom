@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<!-- This website has been created by Matthieu Crochez (matthieu.crochez@gmail.com) for Cocktailadom 
 	Jan. 2015 -->
@@ -9,16 +9,17 @@
   		<meta name="keywords" content="Location barman , location barmen , Barman domicile ,cocktail a dom, cocktail a domicile, Barman mariage, animation mariage, mariage original, location barman pour soirée, location barman cocktail, barman jongleur, mariage, cocktailadom, cocktail a domicile, barman, shake, prestation, cocktail entreprise, cocktail, mojito, privé, soirée dansante, cocktail a dom bar mobile, bar lumineux, flair , cocktails , soirée , domicile , fêtes , réserver , alcool , mariage , événement , barman , soirée originale, création de cocktail, prestations soirée, soirée originale,">
 		
 		<link href="./favicon.ico" rel="shortcut icon">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		
-		<script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script type="text/javascript">
 			$(function(){
       			$("#menu").load("./components/menu.html");
       			$("#footer").load("./components/footer.html");
     		});
 		</script>
 		
-		<script src="./JS/DotNavigation/js/modernizr.min.js"></script>
+		<script type="text/javascript" src="./JS/DotNavigation/js/modernizr.min.js"></script>
 		
         <!-- Include Thumbelina script. -->
         <script type="text/javascript" src="thumbelina-master/thumbelina.js"></script>
@@ -59,8 +60,9 @@
 	</head>
 	
 	<body>
-		<header id="menu">
-		</header>
+		<div id="top"></div>
+		<div id="menu">
+		</div>
 		<div class="firstTile backgroundImage" style="background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
 			<div class="middle">
 				<a href="./devis.html" class="simpleButton devisButton">Demande de Devis</a>
@@ -73,26 +75,26 @@
 									<div class="thumbelina-but horiz left">&#706;</div>
 									<div style="position:absolute;overflow:hidden;width:100%;height:100%;">
 										<ul class="thumbelina" style="left: -177px;">
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery1-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery2-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery3-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery4-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery5-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery6-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery7-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery8-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery9-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery10-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery11-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery12-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery13-TH.png"></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png"></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery1-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery2-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery3-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery4-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery5-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery6-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery7-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery8-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery9-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery10-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery11-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery12-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery13-TH.png" alt=""></li>
+											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png" alt=""></li>
 										</ul>
 									</div>
 									<div class="thumbelina-but horiz right">&#707;</div>
 								</div>
 								<div id="gallery-display">
-									<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png">
+									<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -101,18 +103,16 @@
 			</div>
 		</div>
 		<div style="position:absolute;top:100%;height:100%;width:100%;">
-			<CENTER>
-				<div id="whatsproduct" style="margin-bottom:50px;">
-					<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
-				</div>
-				<div class="dots dotstyle dotstyle-flip">
-					<ul>
-						<li class="current"><CENTER><span class="image demand"></span><span>Demande de devis</span></CENTER></li>
-						<li><CENTER><span class="image recontact"></span><span>Nous vous recontactons</span></CENTER></li>
-						<li><CENTER><span class="image cocktail"></span><span>Installation de votre Bar éphémère</span></CENTER></li>
-					</ul>
-				</div>
-			</CENTER>
+			<div id="whatsproduct" class="center" style="margin-bottom:50px;">
+				<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
+			</div>
+			<div class="dots dotstyle dotstyle-flip">
+				<ul>
+					<li class="current"><div class="center"><span class="image demand"></span><span>Demande de devis</span></div></li>
+					<li><div class="center"><span class="image recontact"></span><span>Nous vous recontactons</span></div></li>
+					<li><div class="center"><span class="image cocktail"></span><span>Installation de votre Bar éphémère</span></div></li>
+				</ul>
+			</div>
 		</div>
 		
 		<div id="video" style="position:absolute;top:200%;height:100%;width:100%;">
@@ -120,19 +120,19 @@
 				<div class="text">
 					<span class="firstLetter">D</span>écouvrez à travers notre vidéo l'ambiance magique qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravire vos convives... Cocktailadom !</div>
 			</div>
-			<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="//player.vimeo.com/video/101046012?portrait=0&amp;color=ffffff&amp;" width="800" height="600" style="border:0;"></iframe>
 			
 		</div>
 		
-		<div id="prestations" style="position:absolute;top:300%;height:calc(100% + 310px);width:100%;">
+		<div id="prestations" style="position:absolute;top:300%;height:310px;width:100%;">
 			<div id="prestaCell0" class="prestationsCell backgroundImage" style="background-position:center bottom;background-image:url('./resources/pictures/10333393_680046475364425_46211802463774288_o.jpg');">
 			</div>
 			<div id="prestaCell1" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/485030_494570310578710_40554545_n.jpg');">
 			</div>
 			<div id="prestaCell2" class="prestationsCell backgroundImage" style="background-image:url('./resources/pictures/10329756_693857540649985_9200382979447168112_o.jpg');">
 			</div>
-			<div id="presta0" onclick='javascript:showPresta(0, true);' class="simpleButton absoluteButton" style="left:7%;right:75.5%;">COCKTAIL PARTY
-				<div id="cocktail_party" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+			<div id="presta0" onclick='javascript:showPresta(0, true);' class="simpleButton absoluteButton" style="left:7%;right:77.5%;">COCKTAIL PARTY
+				<div id="cocktail_party" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
@@ -140,9 +140,9 @@
 							</td>
 							<td style="width:50%;height:100%;">
 								<div style="width:100%;height:100%;">
-									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+									<div class="center" style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
 										<div style="display:block;">
-											<div style="color:white;max-width:60%;margin-top:100px;position:relative;top:0;">
+											<div style="color:white;max-width:60%;margin:100px auto 0 auto;position:relative;top:0;">
 												<span style="font-weight:bold;">La Cocktail Party</span>
 												<br>
 												<br>
@@ -158,22 +158,22 @@
 												</a>
 											</div>
 										</div>
-									</CENTER>
+									</div>
 								</div>
 							</td>
 						</tr>
 					</table>
 				</div>
 			</div>
-			<div id="presta1" onclick='javascript:showPresta(1, true);' class="simpleButton absoluteButton" style="left:40%;right:40%;">L'ATELIER COCKTAIL
-				<div id="atelier_cocktail" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+			<div id="presta1" onclick='javascript:showPresta(1, true);' class="simpleButton absoluteButton" style="left:41%;right:42%;">L'ATELIER COCKTAIL
+				<div id="atelier_cocktail" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
 								<div style="width:100%;height:100%;">
-									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+									<div class="center" style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
 										<div style="display:block;">
-											<div style="color:white;max-width:60%;margin-top:100px;position:relative;top:0;">
+											<div style="color:white;max-width:60%;margin:100px auto 0 auto;position:relative;top:0;">
 												<span style="font-weight:bold;">L'atelier Cocktail</span>
 												<br>
 												<br>
@@ -189,7 +189,7 @@
 												</a>
 											</div>
 										</div>
-									</CENTER>
+									</div>
 								</div>
 							</td>
 							<td style="width:50%;height:100%;">
@@ -199,8 +199,8 @@
 					</table>
 				</div>
 			</div>
-			<div id="presta2" onclick='javascript:showPresta(2, true);' class="simpleButton absoluteButton" style="left:76%;right:8%;">BAR A MOJITO
-				<div id="bar_mojito" class="reveal" style="visibility:hidden;opacity:0;height:calc(100% - 50px);">
+			<div id="presta2" onclick='javascript:showPresta(2, true);' class="simpleButton absoluteButton" style="left:76%;right:10%;">BAR A MOJITO
+				<div id="bar_mojito" class="reveal" style="opacity:0;height:calc(100% - 50px);">
 					<table style="height:100%;width:100%;">
 						<tr>
 							<td style="width:50%;height:100%;">
@@ -208,9 +208,9 @@
 							</td>
 							<td style="width:50%;height:100%;">
 								<div style="width:100%;height:100%;">
-									<CENTER style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
+									<div class="center" style="display:inline-block;width:100%;height:100%;position:relative;top:0;">
 										<div style="display:block;">
-											<div style="color:white;max-width:60%;margin-top:200px;position:relative;top:0;">
+											<div style="color:white;max-width:60%;margin:100px auto 0 auto;position:relative;top:0;">
 												<span style="font-weight:bold;">Le bar à Mojito</span>
 												<br>
 												<br>
@@ -226,7 +226,7 @@
 												</a>
 											</div>
 										</div>
-									</CENTER>
+									</div>
 								</div>
 							</td>
 						</tr>
@@ -238,12 +238,26 @@
 		<div id="prestationsAnchor" style="position: absolute;top: calc(300% + 310px);">
 		</div>
 		
-		<!--<div style="height:150px;display:block;position:absolute;top:350%;">
-			<a href="./devis.html" class="simpleButton devisButton" style="top:60px;position:relative;">Demande de Devis</a>
-		</div>-->
-		<footer id="footer" style="top:calc(300% + 310px);"></footer>
-		<script src="./JS/DotNavigation/js/dots.js"></script>
- 		<script>
+		<div id="feedback">
+			<div class="controller left"></div>
+			<div class="content">
+				<div class="line"></div>
+				<div class="title"></div>
+				<div class="message"></div>
+				<div class="grade">
+					<span class="star fa fa-star"></span>
+					<span class="star fa fa-star"></span>
+					<span class="star fa fa-star"></span>
+					<span class="star fa fa-star"></span>
+					<span class="star fa fa-star"></span>
+				</div>
+				<div class="line"></div>
+			</div>
+			<div class="controller right"></div>
+		</div>
+		<div id="footer" style="top:calc(300% + 310px);"></div>
+		<script type="text/javascript" src="./JS/DotNavigation/js/dots.js"></script>
+ 		<script type="text/javascript">
 	           	function updateProductDot(idx) {
 	   				var title;
 					var text;
@@ -282,10 +296,33 @@
 					}
 				} );
 			})
+			
+			var titles = new Array("1", "2", "3", "4", "5", "6", "7", "8");
+			var messages = new Array("Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail");
+			var grades = new Array(1, 2, 3, 4, 5, 0, 1, 2);
+			var current = Math.floor(Math.random() * titles.length); ;
+			function showFeedback(n) {
+				current = n % titles.length;
+				$('#feedback .content .title').text(titles[current]);
+				$('#feedback .content .title').css("display", "none");
+				$('#feedback .content .title').fadeIn(1000);
+				$('#feedback .content .message').text(messages[current]);
+				$('#feedback .content .message').css("display", "none");
+				$('#feedback .content .message').fadeIn(1000);
+			}
+			$(function(){
+				$('#feedback .controller.left').on('click', function() {
+					showFeedback(current - 1);
+				});
+				$('#feedback .controller.right').on('click', function() {
+					showFeedback(current + 1);
+				});
+				showFeedback(current);
+			})
 		</script>
-		<script>
+		<script type="text/javascript">
 		
-			function scrollToAnchor(aid){
+			function scrollToId(aid){
     			var aTag = $(aid);
     			$('html,body').animate({scrollTop: aTag.offset().top},1000);
 			}
@@ -305,7 +342,7 @@
 						$('#prestaCell' + i).removeClass(className);
 						$('#prestaCell' + i).attr('onclick', '');
 						$('#presta' + i).removeClass(className);
-						$('#presta' + i).attr('onclick', 'javascript:showPresta(' + i + ');');
+						$('#presta' + i).attr('onclick', 'javascript:showPresta(' + i + ', true);');
 					}
 				}
 				if (presta === -1) {
@@ -315,16 +352,14 @@
 					$('#footer').css('top', 'calc(400% + 310px)');
 					$('#prestations').css('height', 'calc(100% + 310px)');
 				}
-				$('#presta' + i + ' .reveal').css('display', 'none');//Not working; can't figure out why
-                $('#presta' + i + ' .reveal').fadeIn(1000, function(){});//Not working; can't figure out why
                 if (animated)
-	                scrollToAnchor('#prestationsAnchor');
+	                scrollToId('#prestationsAnchor');
 			}
 		</script>
-		<script src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
-		<script src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
-		<script src="./JS/ButtonMorph/resources/classie.js"></script>
-		<script>
+		<script type="text/javascript" src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
+		<script type="text/javascript" src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
+		<script type="text/javascript" src="./JS/ButtonMorph/resources/classie.js"></script>
+		<script type="text/javascript">
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -333,7 +368,7 @@
   			ga('create', 'UA-26236422-1', 'auto');
   			ga('send', 'pageview');
 		</script>
-		<script>
+		<script type="text/javascript">
 			(function() {
 				new UIMorphingButton( document.querySelector( '.morph-button' ), {
 					closeEl : '.icon-close'

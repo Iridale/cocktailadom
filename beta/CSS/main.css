@@ -5,7 +5,7 @@ body {
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
-	min-width:800px;
+	min-width:1295px;
 }
 
 table {
@@ -17,7 +17,11 @@ td {
 	padding:0;
 }
 
-header {
+.center{
+	text-align:center;
+}
+
+#menu {
     text-align: center;
     vertical-align: middle;
 	color:RGB(255, 255, 255);
@@ -195,7 +199,7 @@ a {
 	color:white;
 	background:#BF5287;
 	padding:1em 2em;
-	cursor:pointer;
+	cursor:pointer;y
 	font-weight:bold;
 }
 
@@ -211,7 +215,6 @@ a {
 	max-height:21px;
 	white-space:nowrap;
 	font-size:1.3vw;
-	
 }
 
 .absoluteButton.current {
@@ -227,10 +230,17 @@ a {
 }
 
 .current.absoluteButton .reveal {
-	visibility:visible !important;
 	opacity:1 !important;
+	visibility:visible;
 }
 
+
+.absoluteButton .reveal {
+	transition-property:opacity;
+	transition-delay:1s;
+	transition-duration:1s;
+	visibility:hidden;
+}
 
 
 #video {
@@ -294,6 +304,7 @@ a {
 	border-radius:50%;
 	border:2px solid RGB(191, 82, 135);
 	display:block;
+	margin:auto;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -332,7 +343,7 @@ a {
 	list-style:none;
 }
 .dots ul li{
-	width:30%;
+	width:33%;
 	display:inline-block;
 }
 
@@ -343,4 +354,81 @@ a {
 	-webkit-transform:rotateY(180deg);
 	transform:rotateY(180deg);
 }
+
+
+/* Feedback messages */
+
+#feedback {
+	height:250px;
+	width:100%;
+	position:absolute;
+	top:450%;
+	text-align:center;
+}
+#feedback .content {
+	position:absolute;
+	left:20%;
+	right:20%;
+	height:100%;
+}
+#feedback .line {
+	height:1px;
+	margin: 20px auto;
+	background-color:white;
+	width:40%;
+}
+#feedback .title {
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+#feedback .message {
+	max-width:70%;
+	margin:20px auto;
+}
+
+#feedback .grade {
+	
+}
+
+#feedback .star {
+	height:20px;
+	width:20px;
+	margin:0 20px;
+}
+#feedback .controller.left {
+	left:0;
+}
+#feedback .controller.right {
+	right:0;
+}
+#feedback .controller {
+	height:100%;
+	width:20%;
+	position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
