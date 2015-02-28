@@ -420,9 +420,8 @@ a {
 	width:20%;
 	position:absolute;
 }
-#feedback .controller .fa {
-	height:100px;
-	width:100px;
+#feedback .controller .control {
+	font-size:100px;
 	position:relative;
 	top:75px;
 }
