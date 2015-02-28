@@ -239,12 +239,14 @@
 		</div>
 		
 		<div id="feedback">
-			<div class="controller left"></div>
+			<div class="controller left"><span class="fa arrow-circle-left" style="position:relative;top:50%;" onmouseover="javascript:this.className = 'fa arrow-circle-o-left';" onmouseout="javascript:this.className = 'fa arrow-circle-left';"></span></div>
 			<div class="content">
 				<div class="contentTop">
 					<div class="line"></div>
 					<div class="title"></div>
 					<div class="message"></div>
+				</div>
+				<div class="contentBottom">
 					<div class="grade">
 						<span class="star fa fa-star"></span>
 						<span class="star fa fa-star"></span>
@@ -255,7 +257,7 @@
 					<div class="line"></div>
 				</div>
 			</div>
-			<div class="controller right"></div>
+			<div class="controller right"><span class="fa arrow-circle-right" style="position:relative;top:50%;" onmouseover="javascript:this.className = 'fa arrow-circle-o-right';" onmouseout="javascript:this.className = 'fa arrow-circle-right';"></span></div>
 		</div>
 		<div id="footer" style="top:calc(300% + 310px);"></div>
 		<script type="text/javascript" src="./JS/DotNavigation/js/dots.js"></script>
@@ -307,12 +309,10 @@
 				current = (n + titles.length) % titles.length;
 				$('#feedback .content .title').text(titles[current]);
 				$('#feedback .content .title').css("display", "none");
-				$('#feedback .content .title').css("transition", "opacity 1s ease-out 0s");
-				$('#feedback .content .title').css("opacity", "1");
+				$('#feedback .content .title').fadeIn(1000);
 				$('#feedback .content .message').text(messages[current]);
-				$('#feedback .content .message').css("opacity", "0");
-				$('#feedback .content .message').css("transition", "opacity 1s ease-out 0s");
-				$('#feedback .content .message').css("opacity", "1");
+				$('#feedback .content .message').css("display", "none");
+				$('#feedback .content .message').fadeIn(1000);
 			}
 			$(function(){
 				$('#feedback .controller.left').on('click', function() {
