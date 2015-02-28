@@ -11,7 +11,16 @@
 		<link href="./favicon.ico" rel="shortcut icon">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+		<script>
+			(function($){
+				var $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+				if ($span.css('fontFamily') !== 'FontAwesome' ) {
+					// Fallback Link
+					$('head').append('<link href="./CSS/font-awesome.min.css" rel="stylesheet">');
+				}
+				$span.remove();
+			})(jQuery);
+		</script>
 		<script type="text/javascript">
 			$(function(){
       			$("#menu").load("./components/menu.html");
@@ -239,7 +248,7 @@
 		</div>
 		
 		<div id="feedback">
-			<div class="controller left"><span class="fa arrow-circle-left" style="position:relative;top:50%;" onmouseover="javascript:this.className = 'fa arrow-circle-o-left';" onmouseout="javascript:this.className = 'fa arrow-circle-left';"></span></div>
+			<div class="controller left"><span class="fa fa-arrow-circle-left" onmouseover="javascript:this.className = 'fa fa-arrow-circle-o-left';" onmouseout="javascript:this.className = 'fa fa-arrow-circle-left';"></span></div>
 			<div class="content">
 				<div class="contentTop">
 					<div class="line"></div>
@@ -257,7 +266,7 @@
 					<div class="line"></div>
 				</div>
 			</div>
-			<div class="controller right"><span class="fa arrow-circle-right" style="position:relative;top:50%;" onmouseover="javascript:this.className = 'fa arrow-circle-o-right';" onmouseout="javascript:this.className = 'fa arrow-circle-right';"></span></div>
+			<div class="controller right"><span class="fa fa-arrow-circle-right" onmouseover="javascript:this.className = 'fa fa-arrow-circle-o-right';" onmouseout="javascript:this.className = 'fa fa-arrow-circle-right';"></span></div>
 		</div>
 		<div id="footer" style="top:calc(300% + 310px);"></div>
 		<script type="text/javascript" src="./JS/DotNavigation/js/dots.js"></script>

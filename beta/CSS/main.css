@@ -420,6 +420,12 @@ a {
 	width:20%;
 	position:absolute;
 }
+#feedback .controller .fa {
+	height:100px;
+	width:100px;
+	position:relative;
+	top:50%;
+}
 
 
 
