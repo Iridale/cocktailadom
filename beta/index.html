@@ -324,8 +324,8 @@
 				$('#feedback .content .message').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(0, grades[current]).addClass("fa-star");
 				$('#feedback .content .grade .star').slice(grades[current]).addClass("fa-star-o");
-				$('#feedback .content .grade .star').slice(grades.length - grades[current]).addClass("fa-star");
 			}
 			$(function(){
 				$('#feedback .controller.left .control').on('click', function() {
