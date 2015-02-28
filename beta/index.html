@@ -248,7 +248,7 @@
 		</div>
 		
 		<div id="feedback">
-			<div class="controller left"><span class="fa fa-arrow-circle-left" onmouseover="javascript:this.className = 'fa fa-arrow-circle-o-left';" onmouseout="javascript:this.className = 'fa fa-arrow-circle-left';"></span></div>
+			<div class="controller left"><span class="control fa fa-arrow-circle-left"></span></div>
 			<div class="content">
 				<div class="contentTop">
 					<div class="line"></div>
@@ -257,16 +257,16 @@
 				</div>
 				<div class="contentBottom">
 					<div class="grade">
-						<span class="star fa fa-star"></span>
-						<span class="star fa fa-star"></span>
-						<span class="star fa fa-star"></span>
-						<span class="star fa fa-star"></span>
-						<span class="star fa fa-star"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
 					</div>
 					<div class="line"></div>
 				</div>
 			</div>
-			<div class="controller right"><span class="fa fa-arrow-circle-right" onmouseover="javascript:this.className = 'fa fa-arrow-circle-o-right';" onmouseout="javascript:this.className = 'fa fa-arrow-circle-right';"></span></div>
+			<div class="controller right"><span class="control fa fa-arrow-circle-right"></span></div>
 		</div>
 		<div id="footer" style="top:calc(300% + 310px);"></div>
 		<script type="text/javascript" src="./JS/DotNavigation/js/dots.js"></script>
@@ -322,12 +322,14 @@
 				$('#feedback .content .message').text(messages[current]);
 				$('#feedback .content .message').css("display", "none");
 				$('#feedback .content .message').fadeIn(1000);
+				$('#feedback .content .grade .star').removeClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(grades[current]).addClass("fa-star");
 			}
 			$(function(){
-				$('#feedback .controller.left').on('click', function() {
+				$('#feedback .controller.left .control').on('click', function() {
 					showFeedback(current - 1);
 				});
-				$('#feedback .controller.right').on('click', function() {
+				$('#feedback .controller.right .control').on('click', function() {
 					showFeedback(current + 1);
 				});
 				showFeedback(current);
