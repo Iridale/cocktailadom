@@ -241,17 +241,19 @@
 		<div id="feedback">
 			<div class="controller left"></div>
 			<div class="content">
-				<div class="line"></div>
-				<div class="title"></div>
-				<div class="message"></div>
-				<div class="grade">
-					<span class="star fa fa-star"></span>
-					<span class="star fa fa-star"></span>
-					<span class="star fa fa-star"></span>
-					<span class="star fa fa-star"></span>
-					<span class="star fa fa-star"></span>
+				<div class="contentTop">
+					<div class="line"></div>
+					<div class="title"></div>
+					<div class="message"></div>
+					<div class="grade">
+						<span class="star fa fa-star"></span>
+						<span class="star fa fa-star"></span>
+						<span class="star fa fa-star"></span>
+						<span class="star fa fa-star"></span>
+						<span class="star fa fa-star"></span>
+					</div>
+					<div class="line"></div>
 				</div>
-				<div class="line"></div>
 			</div>
 			<div class="controller right"></div>
 		</div>
@@ -302,13 +304,15 @@
 			var grades = new Array(1, 2, 3, 4, 5, 0, 1, 2);
 			var current = Math.floor(Math.random() * titles.length); ;
 			function showFeedback(n) {
-				current = n % titles.length;
+				current = (n + titles.length) % titles.length;
 				$('#feedback .content .title').text(titles[current]);
 				$('#feedback .content .title').css("display", "none");
-				$('#feedback .content .title').fadeIn(1000);
+				$('#feedback .content .title').css("transition", "opacity 1s ease-out 0s");
+				$('#feedback .content .title').css("opacity", "1");
 				$('#feedback .content .message').text(messages[current]);
-				$('#feedback .content .message').css("display", "none");
-				$('#feedback .content .message').fadeIn(1000);
+				$('#feedback .content .message').css("opacity", "0");
+				$('#feedback .content .message').css("transition", "opacity 1s ease-out 0s");
+				$('#feedback .content .message').css("opacity", "1");
 			}
 			$(function(){
 				$('#feedback .controller.left').on('click', function() {

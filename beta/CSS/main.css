@@ -319,7 +319,7 @@ a {
 }
 
 .dots .current .demand{
-    background-image: url("../resources/image/click_icn_white.png") ;
+    background-image: url("../resources/image/click_icn_white.png");
 }
 
 .dots .recontact{
@@ -370,6 +370,18 @@ a {
 	left:20%;
 	right:20%;
 	height:100%;
+}
+#feedback .contentTop {
+	position:absolute;
+	top:0;
+	height:70%;
+	width:100%;
+}
+#feedback .contentBottom {
+	position:absolute;
+	bottom:0;
+	height:30%;
+	width:100%;
 }
 #feedback .line {
 	height:1px;
