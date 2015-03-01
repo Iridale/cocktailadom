@@ -214,6 +214,7 @@ a {
     transition-property: left, right, top, bottom, background-color;
     transition-timing-function: ease-in-out;
     white-space: nowrap;
+	min-width:75px;
 }
 
 .absoluteButton.current {
