@@ -5,7 +5,7 @@ body {
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
-	min-width:1295px;
+	min-width:1350px;
 }
 
 table {
@@ -21,15 +21,14 @@ td {
 	text-align:center;
 }
 
-#menu {
-    text-align: center;
-    vertical-align: middle;
-	color:RGB(255, 255, 255);
-	display:table;
-	width:100%;
-	background-color:rgba(29, 32, 64, 0.3);
-	position:absolute;
-	top:0;
+.layout {
+	bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 
@@ -63,9 +62,8 @@ a {
 .firstTile {
 	text-align:center;
 	max-width:none;
-	height:100%;
 	width:100%;
-	position:absolute;
+	position:relative;
 	top:0;
 }
 
@@ -173,9 +171,10 @@ a {
 }
 
 .prestationsCell {
-    display: inline-block;
+    display: block;
+	position:absolute;
     height: 310px;
-    width: 33%;
+    width: 33.3%;
 	opacity:0.35;
 }
 
@@ -204,29 +203,30 @@ a {
 }
 
 .absoluteButton {
-	top:130px;
-	bottom:81%;
+    float: left;
+    font-size: 1.3vw;
     line-height: 1em;
+    max-height: 21px;
+    min-height: 21px;
     position: absolute;
+    top: 110px;
     transition-duration: 1s;
     transition-property: left, right, top, bottom, background-color;
     transition-timing-function: ease-in-out;
-	min-height:21px;
-	max-height:21px;
-	white-space:nowrap;
-	font-size:1.3vw;
+    white-space: nowrap;
 }
 
 .absoluteButton.current {
     bottom: 0;
     left: 0 !important;
-    right: 0 !important;
+	width:100% !important;
     top: 310px;
 	cursor:default;
 	max-height:inherit;
 	background-color:black;
 	font-size:inherit;
 	white-space:inherit;
+	
 }
 
 .current.absoluteButton .reveal {
@@ -361,35 +361,34 @@ a {
 #feedback {
 	height:250px;
 	width:100%;
-	position:absolute;
-	top:450%;
 	text-align:center;
+	margin-top:50px;
 }
 #feedback .content {
-	position:absolute;
 	left:20%;
 	right:20%;
 	height:100%;
+	float:left;
+	width:60%;
 }
 #feedback .contentTop {
-	position:absolute;
 	top:0;
-	height:70%;
+	height:72%;
 	width:100%;
 }
 #feedback .contentBottom {
-	position:absolute;
 	bottom:0;
-	height:30%;
+	height:28%;
 	width:100%;
 }
 #feedback .line {
 	height:1px;
-	margin: 20px auto;
+	margin: 15px auto;
 	background-color:white;
 	width:40%;
 }
 #feedback .title {
+	font-size:1.3em;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	overflow:hidden;
@@ -418,13 +417,18 @@ a {
 #feedback .controller {
 	height:100%;
 	width:20%;
-	position:absolute;
+	float:left;
+}
+#feedback .controller .control:hover {
+	color:#bf5287;
 }
 #feedback .controller .control {
+	cursor:pointer;
 	font-size:100px;
 	position:relative;
 	top:75px;
 }
+
 
 
 
