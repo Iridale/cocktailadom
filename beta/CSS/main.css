@@ -404,14 +404,6 @@ a {
 	font-style:italic;
 }
 
-#feedback .message:before{
-	content:"«";
-}
-#feedback .message:after {
-	content:"»";
-}
-
-
 #feedback .people_amount {
     display: inline-block;
     padding-right: 20px;
