@@ -101,7 +101,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="fullPageHeight" style="position:relative;width:100%;">
+		<div style="position:relative;width:100%;margin-bottom:100px;">
 			<div id="whatsproduct" class="center" style="margin-bottom:50px;">
 				<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
 			</div>
@@ -114,7 +114,7 @@
 			</div>
 		</div>
 		
-		<div class="fullPageHeight" id="video" style="position:relative;width:100%;">
+		<div id="video" style="position:relative;width:100%;">
 			<div class="videoSpeech">
 				<div class="text">
 					<span class="firstLetter">D</span>écouvrez à travers notre vidéo l'ambiance magique qu'apporte c<span class="cocktailadom_o">o</span>cktailad<span class="cocktailadom_o">o</span>m à votre événement. Misez sur l'originalité et la festivité. Pour surprendre et ravire vos convives... Cocktailadom !</div>
@@ -248,6 +248,7 @@
 					<div class="message"></div>
 				</div>
 				<div class="contentBottom">
+					<div class="event_magnitude"><span class="people_amount"></span><span class="location"></span></div>
 					<div class="grade">
 						<span class="star fa fa-star-o"></span>
 						<span class="star fa fa-star-o"></span>
@@ -314,10 +315,12 @@
 				} );
 			})
 			
-			var titles = new Array("Alice", "Béatrice", "Céline", "Denise", "Emmanuelle", "Françoise", "Géraldine", "Henri");
-			var messages = new Array("Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail", "Merci Jacky et Michel pour la soirée cocktail");
-			var grades = new Array(0, 1, 2, 3, 4, 5, 0, 1);
-			var current = Math.floor(Math.random() * titles.length); ;
+			var titles = new Array("Mme . M ", "Mr et Mme P.", "Chef marketing Bouygues télécom", "Mr P.", "Mr et Mme . L", "Ecole IESEG", "Ambassade de Pologne");
+			var messages = new Array("Tous les invités ont été étonnés et ravis de la prestation et des cocktails", "5 sur 5 des barmen excellents et rapides", "Le bar à cocktail après la réunion, ils ont adoré l'idée et en redemande déjà", "Des cocktails très bien décorés et délicieux, notre anniversaire a été très réussi merci au barmen de cocktailadom", "Le concept est génial, nos invités ont passé la soirée un cocktail à la main", "Soirée très réussie grâce à une excellente animation de qualité en toute confiance. Des étudiants ravis", "Personnel de qualité et de confiance, dziękuję (Merci)");
+			var grades = new Array(5, 3, 4, 4, 5, 3, 5, 4);
+			var people_amount = new Array(70, 50, 110, 35, 40, 140, 550);
+			var party_location = new Array("Paris 15e", "Issy-les-moulineaux", "Paris 16", "Boulogne-Billancourt", "Versailles", "La défense", "Paris 8e");
+			var current = Math.floor(Math.random() * titles.length);
 			function showFeedback(n) {
 				current = (n + titles.length) % titles.length;
 				$('#feedback .content .title').text(titles[current]);
@@ -326,6 +329,12 @@
 				$('#feedback .content .message').text(messages[current]);
 				$('#feedback .content .message').css("display", "none");
 				$('#feedback .content .message').fadeIn(1000);
+				$('#feedback .content .people_amount').text(people_amount[current] + " Personnes");
+				$('#feedback .content .people_amount').css("display", "none");
+				$('#feedback .content .people_amount').fadeIn(1000);
+				$('#feedback .content .location').text(party_location[current]);
+				$('#feedback .content .location').css("display", "none");
+				$('#feedback .content .location').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
 				$('#feedback .content .grade .star').slice(0, grades[current]).addClass("fa-star");

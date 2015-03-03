@@ -227,7 +227,7 @@ a {
 	background-color:black;
 	font-size:inherit;
 	white-space:inherit;
-	
+	color:transparent;
 }
 
 .current.absoluteButton .reveal {
@@ -245,7 +245,8 @@ a {
 
 
 #video {
-	height:650px;
+	height:600px;
+	margin-bottom:100px;
 }
 #video .videoSpeech {
 	display:block;
@@ -374,12 +375,12 @@ a {
 }
 #feedback .contentTop {
 	top:0;
-	height:72%;
+	height:65%;
 	width:100%;
 }
 #feedback .contentBottom {
 	bottom:0;
-	height:28%;
+	height:35%;
 	width:100%;
 }
 #feedback .line {
@@ -408,6 +409,7 @@ a {
 	height:20px;
 	width:20px;
 	margin:0 20px;
+	color:#bf5287;
 }
 #feedback .controller.left {
 	left:0;
