@@ -350,11 +350,13 @@ a {
 }
 
 .dots.dotstyle-flip li .image {
-	transition:transform 0.3s ease, opacity 0.3s ease; 
+	transition:transform 0.3s ease, opacity 0.3s ease;
+	cursor:pointer;
 }
 .dots.dotstyle-flip li.current .image {
 	-webkit-transform:rotateY(180deg);
 	transform:rotateY(180deg);
+	cursor:default;
 }
 
 

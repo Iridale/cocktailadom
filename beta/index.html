@@ -107,9 +107,9 @@
 			</div>
 			<div class="dots dotstyle dotstyle-flip">
 				<ul>
-					<li class="current"><div class="center"><span class="image demand"></span><span>Demande de devis</span></div></li>
-					<li><div class="center"><span class="image recontact"></span><span>Nous vous recontactons</span></div></li>
-					<li><div class="center"><span class="image cocktail"></span><span>Installation de votre Bar éphémère</span></div></li>
+					<li class="current"><div class="center"><span class="image demand" title="Etape 1"></span><span>Demande de devis</span></div></li>
+					<li><div class="center"><span class="image recontact" title="Etape 2"></span><span>Nous vous recontactons</span></div></li>
+					<li><div class="center"><span class="image cocktail" title="Etape 3"></span><span>Installation de votre Bar éphémère</span></div></li>
 				</ul>
 			</div>
 		</div>
@@ -320,34 +320,34 @@
 			var grades = new Array(5, 3, 4, 4, 5, 3, 5, 4);
 			var people_amount = new Array(70, 50, 110, 35, 40, 140, 550);
 			var party_location = new Array("Paris 15e", "Issy-les-moulineaux", "Paris 16", "Boulogne-Billancourt", "Versailles", "La défense", "Paris 8e");
-			var current = Math.floor(Math.random() * titles.length);
+			var current_feedback = Math.floor(Math.random() * titles.length);
 			function showFeedback(n) {
-				current = (n + titles.length) % titles.length;
-				$('#feedback .content .title').text(titles[current]);
+				current_feedback = (n + titles.length) % titles.length;
+				$('#feedback .content .title').text(titles[current_feedback]);
 				$('#feedback .content .title').css("display", "none");
 				$('#feedback .content .title').fadeIn(1000);
-				$('#feedback .content .message').text(messages[current]);
+				$('#feedback .content .message').text(messages[current_feedback]);
 				$('#feedback .content .message').css("display", "none");
 				$('#feedback .content .message').fadeIn(1000);
-				$('#feedback .content .people_amount').text(people_amount[current] + " Personnes");
+				$('#feedback .content .people_amount').text(people_amount[current_feedback] + " Personnes");
 				$('#feedback .content .people_amount').css("display", "none");
 				$('#feedback .content .people_amount').fadeIn(1000);
-				$('#feedback .content .location').text(party_location[current]);
+				$('#feedback .content .location').text(party_location[current_feedback]);
 				$('#feedback .content .location').css("display", "none");
 				$('#feedback .content .location').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
-				$('#feedback .content .grade .star').slice(0, grades[current]).addClass("fa-star");
-				$('#feedback .content .grade .star').slice(grades[current]).addClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(0, grades[current_feedback]).addClass("fa-star");
+				$('#feedback .content .grade .star').slice(grades[current_feedback]).addClass("fa-star-o");
 			}
 			$(function(){
 				$('#feedback .controller.left .control').on('click', function() {
-					showFeedback(current - 1);
+					showFeedback(current_feedback - 1);
 				});
 				$('#feedback .controller.right .control').on('click', function() {
-					showFeedback(current + 1);
+					showFeedback(current_feedback + 1);
 				});
-				showFeedback(current);
+				showFeedback(current_feedback);
 			})
 		</script>
 		<script type="text/javascript">
