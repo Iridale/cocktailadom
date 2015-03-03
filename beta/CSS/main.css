@@ -404,8 +404,11 @@ a {
 	font-style:italic;
 }
 
-#feedback .message:before, #feedback .message:after {
-	content:";
+#feedback .message:before{
+	content:"«";
+}
+#feedback .message:after {
+	content:"»";
 }
 
 
