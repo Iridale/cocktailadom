@@ -1,7 +1,8 @@
 #footer {
-	position:absolute;
+	position:relative;
 	width:100%;
 	text-align:center;
+	margin-top:50px;
 }
 #footer .container{
 	margin-top:10px;
@@ -48,9 +49,11 @@
 #footer .copyright {
 	color:#004BDF;
 	text-align:center;
+	font-style:italic;
 }
 
 #footer .header {
 	font-weight:bold;
 	padding-bottom:0.2em;
+	color:#bf5287;
 }

@@ -5,7 +5,7 @@ body {
 	font-size:1.5em;
 	margin:0;
 	overflow-x:hidden;
-	min-width:1295px;
+	min-width:1350px;
 }
 
 table {
@@ -21,15 +21,14 @@ td {
 	text-align:center;
 }
 
-#menu {
-    text-align: center;
-    vertical-align: middle;
-	color:RGB(255, 255, 255);
-	display:table;
-	width:100%;
-	background-color:rgba(29, 32, 64, 0.3);
-	position:absolute;
-	top:0;
+.layout {
+	bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 
@@ -63,9 +62,8 @@ a {
 .firstTile {
 	text-align:center;
 	max-width:none;
-	height:100%;
 	width:100%;
-	position:absolute;
+	position:relative;
 	top:0;
 }
 
@@ -173,9 +171,10 @@ a {
 }
 
 .prestationsCell {
-    display: inline-block;
+    display: block;
+	position:absolute;
     height: 310px;
-    width: 33%;
+    width: 33.3%;
 	opacity:0.35;
 }
 
@@ -199,34 +198,36 @@ a {
 	color:white;
 	background:#BF5287;
 	padding:1em 2em;
-	cursor:pointer;
+	cursor:pointer;y
 	font-weight:bold;
 }
 
 .absoluteButton {
-	top:130px;
-	bottom:81%;
+    float: left;
+    font-size: 1.3vw;
     line-height: 1em;
+    max-height: 21px;
+    min-height: 21px;
     position: absolute;
+    top: 110px;
     transition-duration: 1s;
     transition-property: left, right, top, bottom, background-color;
     transition-timing-function: ease-in-out;
-	min-height:21px;
-	max-height:21px;
-	white-space:nowrap;
-	font-size:1.3vw;
+    white-space: nowrap;
+	min-width:75px;
 }
 
 .absoluteButton.current {
     bottom: 0;
     left: 0 !important;
-    right: 0 !important;
+	width:100% !important;
     top: 310px;
 	cursor:default;
 	max-height:inherit;
 	background-color:black;
 	font-size:inherit;
 	white-space:inherit;
+	color:transparent;
 }
 
 .current.absoluteButton .reveal {
@@ -244,7 +245,8 @@ a {
 
 
 #video {
-	height:650px;
+	height:600px;
+	margin-bottom:100px;
 }
 #video .videoSpeech {
 	display:block;
@@ -319,7 +321,7 @@ a {
 }
 
 .dots .current .demand{
-    background-image: url("../resources/image/click_icn_white.png") ;
+    background-image: url("../resources/image/click_icn_white.png");
 }
 
 .dots .recontact{
@@ -348,10 +350,129 @@ a {
 }
 
 .dots.dotstyle-flip li .image {
-	transition:transform 0.3s ease, opacity 0.3s ease; 
+	transition:transform 0.3s ease, opacity 0.3s ease;
+	cursor:pointer;
 }
 .dots.dotstyle-flip li.current .image {
 	-webkit-transform:rotateY(180deg);
 	transform:rotateY(180deg);
+	cursor:default;
 }
+
+
+/* Feedback messages */
+
+#feedback {
+	height:250px;
+	width:100%;
+	text-align:center;
+	margin-top:50px;
+}
+#feedback .content {
+	left:20%;
+	right:20%;
+	height:100%;
+	float:left;
+	width:60%;
+}
+#feedback .contentTop {
+	top:0;
+	height:65%;
+	width:100%;
+}
+#feedback .contentBottom {
+	bottom:0;
+	height:35%;
+	width:100%;
+}
+#feedback .line {
+	height:1px;
+	margin: 15px auto;
+	background-color:white;
+	width:40%;
+}
+#feedback .title {
+	font-size:1.3em;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+#feedback .message {
+	max-width:70%;
+	margin:20px auto;
+	font-style:italic;
+	display:block;
+}
+
+#feedback .people_amount {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: right;
+    width: calc(50% - 20px);
+    font-size: 0.7em;
+    text-decoration: underline;
+}
+#feedback .location {
+    display: inline-block;
+    padding-left: 20px;
+    text-align: left;
+    width: calc(50% - 20px);
+    color: #bf5287;
+    font-size: 0.7em;
+}
+
+#feedback .grade {
+	
+}
+
+#feedback .star {
+	height:20px;
+	width:20px;
+	margin:0 20px;
+	color:#bf5287;
+}
+#feedback .controller.left {
+	left:0;
+}
+#feedback .controller.right {
+	right:0;
+}
+#feedback .controller {
+	height:100%;
+	width:20%;
+	float:left;
+}
+#feedback .controller .control:hover {
+	color:#bf5287;
+}
+#feedback .controller .control {
+	cursor:pointer;
+	font-size:100px;
+	position:relative;
+	top:75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
