@@ -396,6 +396,7 @@ a {
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	overflow:hidden;
+    color: #bf5287;
 }
 
 #feedback .message {
