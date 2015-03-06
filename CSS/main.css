@@ -211,7 +211,7 @@ a {
     position: absolute;
     top: 110px;
     transition-duration: 1s;
-    transition-property: left, right, top, bottom, background-color;
+    transition-property: left, right, top, bottom, width, height, background-color;
     transition-timing-function: ease-in-out;
     white-space: nowrap;
 	min-width:75px;
