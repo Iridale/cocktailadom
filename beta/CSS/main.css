@@ -211,7 +211,7 @@ a {
     position: absolute;
     top: 110px;
     transition-duration: 1s;
-    transition-property: left, right, top, bottom, background-color;
+    transition-property: left, right, top, bottom, width, height, background-color;
     transition-timing-function: ease-in-out;
     white-space: nowrap;
 	min-width:75px;
@@ -457,7 +457,44 @@ a {
 
 
 
+#extras {
+	height:500px;
+	margin:100px 50px;
+	text-align:center;
+}
 
+#extras li {
+	list-style:none;
+}
+
+#extras .cocktail {
+	width:500px;
+	display:inline-block;
+	float:left;
+	height:100%;
+	background-image:url('../resources/image/cocktails.png');
+}
+
+#extras .presta {
+	width:500px;
+	display:inline-block;
+	float:left;
+	height:100%;
+	background-image:url('../resources/image/prestataires.png');
+}
+
+#extras .text {
+	width:calc(100% - 1000px);
+	display:inline-block;
+	float:left;
+	height:100%;
+}
+
+#extras .extraText {
+	margin-top:75%;
+	color:rgb(237, 230, 255);
+	text-shadow: 0px 0px 5px rgb(237, 206, 249);
+}
 
 
 
