@@ -457,11 +457,85 @@ a {
 
 
 
+#extras {
+	height:500px;
+	margin:100px 50px;
+	text-align:center;
+}
+
+#extras li {
+	list-style:none;
+}
+
+#extras .cocktail {
+	width:500px;
+	display:inline-block;
+	float:left;
+	height:100%;
+	background-image:url('../resources/image/cocktails.png');
+}
+
+#extras .presta {
+	width:500px;
+	display:inline-block;
+	float:left;
+	height:100%;
+	background-image:url('../resources/image/prestataires.png');
+}
+
+#extras .text {
+	width:calc(100% - 1000px);
+	display:inline-block;
+	float:left;
+	padding:50px 0;
+}
+#extras .text ul{
+	margin:0;
+	padding:50px 0 0 0;
+}
 
 
+#extras .overflowHidden:hover .extraText {
+	padding-top:18%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+#extras .titleExtraText {
+	margin-bottom:25px;
+	font-size:1.5em;
+}
 
+#extras .extraText {
+	height:82%;
+	padding-top:77%;
+	color:rgb(237, 230, 255);
+	text-shadow: 0px 0px 5px rgb(237, 206, 249);
+	font-size:1.2em;
+	transition-property:padding-top background-color;
+	transition-duration:0.7s;
+}
 
+#extras .overflowHidden {
+	overflow:hidden;
+}
+
+#extras .overflowHidden .appear {
+	opacity:0;
+	transition:opacity 0.7s;
+}
+
+#extras .overflowHidden:hover .appear {
+	opacity:1;
+}
+
+#extras .backgroundImageAnimateHover {
+	transition:background-size 0.7s;
+	background-repeat:no-repeat;
+	background-size:95%;
+}
+#extras .backgroundImageAnimateHover:hover {
+	background-size:100%;
+}
 
 
 
