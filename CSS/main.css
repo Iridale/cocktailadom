@@ -424,13 +424,13 @@ a {
 }
 
 #feedback .grade {
-	
+	cursor:default;
 }
 
 #feedback .star {
 	height:20px;
 	width:20px;
-	margin:0 20px;
+	margin:0 10px;
 	color:#bf5287;
 }
 #feedback .controller.left {
