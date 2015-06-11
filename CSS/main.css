@@ -412,7 +412,7 @@ a {
     text-align: right;
     width: calc(50% - 20px);
     font-size: 0.7em;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 #feedback .location {
     display: inline-block;
@@ -452,6 +452,9 @@ a {
 	font-size:100px;
 	position:relative;
 	top:75px;
+	transition-property:color;
+	transition-timing-function:ease-out;
+	transition-duration:0.1s;
 }
 
 
@@ -509,7 +512,7 @@ a {
 	height:82%;
 	padding-top:77%;
 	color:rgb(237, 230, 255);
-	text-shadow: 0px 0px 5px rgb(237, 206, 249);
+	/*text-shadow: 0px 0px 5px rgb(237, 206, 249);*/
 	font-size:1.2em;
 	transition-property:padding-top background-color;
 	transition-duration:0.7s;

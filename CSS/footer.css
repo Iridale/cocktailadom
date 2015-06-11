@@ -47,13 +47,19 @@
 }
 
 #footer .copyright {
-	color:#004BDF;
+	color:#CCC;
 	text-align:center;
 	font-style:italic;
+	font-size:0.5em;
 }
 
 #footer .header {
 	font-weight:bold;
 	padding-bottom:0.2em;
 	color:#bf5287;
+	font-size:1em;
+}
+
+#footer ul li {
+	font-size:0.8em;
 }
