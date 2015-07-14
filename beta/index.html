@@ -412,7 +412,12 @@
 				$('#feedback .controller.right .control').on('click', function() {
 					showFeedback(current_feedback + 1);
 				});
+				$('#feedback .content .grade .star').on('click', function() {
+					showFeedback($('#feedback .content .grade .star').index());
+				});
+				
 				showFeedback(current_feedback);
+				
 			})
 		</script>
 		<script type="text/javascript">
