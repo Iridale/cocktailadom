@@ -262,6 +262,9 @@
 						<span class="star fa fa-star-o"></span>
 						<span class="star fa fa-star-o"></span>
 						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
+						<span class="star fa fa-star-o"></span>
 					</div>
 					<div class="line"></div>
 				</div>
@@ -399,8 +402,8 @@
 				$('#feedback .content .location').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
-				$('#feedback .content .grade .star').slice(0, grades[current_feedback]).addClass("fa-star");
-				$('#feedback .content .grade .star').slice(grades[current_feedback]).addClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(0, n/*grades[current_feedback]*/).addClass("fa-star");
+				$('#feedback .content .grade .star').slice(n/*grades[current_feedback]*/).addClass("fa-star-o");
 			}
 			$(function(){
 				$('#feedback .controller.left .control').on('click', function() {
