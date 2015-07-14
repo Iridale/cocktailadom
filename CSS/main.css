@@ -507,6 +507,7 @@ a {
 	margin-bottom:25px;
 	font-size:1.5em;
 	color:#FEF;
+	text-shadow:0 0 5px black;
 }
 
 #extras .extraText {
@@ -545,7 +546,9 @@ a {
 
 
 
-
+.devisBottomButton:hover {
+	background-color:RGBa(191, 82, 135, 0.5) !important;
+}
 
 
 
