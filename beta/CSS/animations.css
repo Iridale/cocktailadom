@@ -1,0 +1,9 @@
+@keyframes bumpFromLeft {
+	0%		{left:-100%;opacity:0;}
+    100%	{left:0;opacity:1;}
+}
+
+@keyframes bumpFromRight {
+	0%			{right:-100%;opacity:0;}
+    100%		{right:0;opacity:1;}
+}
