@@ -52,7 +52,7 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/whatsproduct.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/animations.css">
 		<!--<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">-->
 		<link rel="stylesheet" type="text/css" href="./JS/ButtonMorph/resources/component.css">
 		<link rel="stylesheet" type="text/css" href="./thumbelina-master/thumbelina.css">
@@ -105,7 +105,7 @@
 			<div id="whatsproduct" class="center" style="margin-bottom:50px;">
 				<div class="speech"><div id="speech_title">Cocktailadom ?</div><div id="speech_text">Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !</div></div>
 			</div>
-			<div class="dots dotstyle dotstyle-flip">
+			<div id="whatsproductdots" class="dots dotstyle dotstyle-flip">
 				<ul>
 					<li class="current"><div class="center"><span class="image demand" title="Etape 1"></span><span>Demande de devis</span></div></li>
 					<li><div class="center"><span class="image recontact" title="Etape 2"></span><span>Nous vous recontactons</span></div></li>
@@ -323,37 +323,50 @@
 					$(window).resize(fullPageHeightUpdate);
 				})
 				
-				
+				var current_index;
+				$(function(){
+					current_index = $('#whatsproductdots .current').index();
+				})
 				
 	           	function updateProductDot(idx) {
 	   				var title;
 					var text;
 					switch( idx ) {
-					case 0:
-						title='Cocktailadom ?';
-						text='Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !'
-						break;
-					case 1:
-						title='A votre écoute';
-						text='Nous étudions votre demande, et nous vous proposons un devis personnalisé selon vos demandes et vos attentes.<br>Réponse dans les 24h.';
-						break;
-					case 2:
-						title='Laissez-vous guider';
-						text='Notre équipe se prépare pour votre événement.<br>Nous installons un bar éphémère chez vous le temps de votre événement !<br>De la conception de la carte des cocktails au service des boissons...<br>Cocktailadom ne négligera aucun détail';
-						break;
+						case 0:
+							title='Cocktailadom ?';
+							text='Cocktailadom à tout prévu pour rendre vos soirées animées et originales.<br>Un service de barman professionnel pour vous servir et créer de délicieux cocktails tout au long de votre évènement.<br>Vous êtes intéressé ? Rendez-vous sur notre page de <a href="./devis.html" style="color:RGB(191, 82, 135);">demande de devis</a> et remplissez simplement le formulaire, cela ne prend que quelques minutes !'
+							break;
+						case 1:
+							title='A votre écoute';
+							text='Nous étudions votre demande, et nous vous proposons un devis personnalisé selon vos demandes et vos attentes.<br>Réponse dans les 24h.';
+							break;
+						case 2:
+							title='Laissez-vous guider';
+							text='Notre équipe se prépare pour votre événement.<br>Nous installons un bar éphémère chez vous le temps de votre événement !<br>De la conception de la carte des cocktails au service des boissons...<br>Cocktailadom ne négligera aucun détail';
+							break;
 					}
-					
+					//Change the text
 					var elt = document.getElementById('speech_title');
 					if (elt != null)
 						elt.innerHTML = title;
 					elt = document.getElementById('speech_text');
 					if (elt != null)
 						elt.innerHTML = text;
+					
+					//Animate the view
+					var animationName = (current_index < idx) ? 'bumpFromRight' : 'bumpFromLeft';
+					$('#whatsproduct').css('animation-name', animationName);
+					$('#whatsproduct').css('animation-duration', '0.8s');
+					current_index = idx;
+					setTimeout(function() {$('#whatsproduct').css('animation-name', '');} , 800)
+					
+					/*
 					$('#speech_title').css('display', 'none');
 					$('#speech_text').css('display', 'none');
                     $('#speech_title').fadeIn(1000, function() {
     	                $('#speech_text').fadeIn(1000);
                     });
+					*/
 	           	}
 
 			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {

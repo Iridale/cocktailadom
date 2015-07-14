@@ -1,5 +1,5 @@
 body {
-	background:black;
+	background-color:#222;
 	color:white;
 	font-family:PT Sans, sans-serif;
 	font-size:1.5em;
@@ -282,6 +282,8 @@ a {
 	color:white;
 	height:200px;
 	margin-top:7%;
+	position:relative;
+	animation-timing-function: ease-in-out;
 }
 #whatsproduct .text {
 	padding-top:1em;
