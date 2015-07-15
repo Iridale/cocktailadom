@@ -413,8 +413,8 @@
 				$('#feedback .content .location').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
-				$('#feedback .content .grade .star').slice(0, n/*grades[current_feedback]*/).addClass("fa-star");
-				$('#feedback .content .grade .star').slice(n/*grades[current_feedback]*/).addClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(0, n+1/*grades[current_feedback]*/).addClass("fa-star");
+				$('#feedback .content .grade .star').slice(n+1/*grades[current_feedback]*/).addClass("fa-star-o");
 			}
 			$(function(){
 				$('#feedback .controller.left .control').on('click', function() {
@@ -424,7 +424,7 @@
 					showFeedback(current_feedback + 1);
 				});
 				$('#feedback .content .grade .star').on('click', function() {
-					showFeedback($(this).index());
+					showFeedback($(this).index() - 1);
 				});
 				
 				showFeedback(current_feedback);
