@@ -417,6 +417,10 @@
 				$('#feedback .content .grade .star').slice(current_feedback+1/*grades[current_feedback]*/).addClass("fa-star-o");
 			}
 			$(function(){
+				$('#feedback .content .title').css("animation-duration", "1s");
+				$('#feedback .content .message').css("animation-duration", "1s");
+				$('#feedback .content .people_amount').css("animation-duration", "1s");
+				$('#feedback .content .location').css("animation-duration", "1s");
 				$('#feedback .controller.left .control').on('click', function() {
 					showFeedback(current_feedback - 1);
 				});
