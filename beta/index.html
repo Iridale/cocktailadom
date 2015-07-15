@@ -401,17 +401,17 @@
 			function showFeedback(n) {
 				current_feedback = (n + titles.length) % titles.length;
 				$('#feedback .content .title').text(titles[current_feedback]);
-				$('#feedback .content .title').css("animation-name", "");
 				$('#feedback .content .title').css("animation-name", "fadeIn");
 				$('#feedback .content .message').text(messages[current_feedback]);
-				$('#feedback .content .message').css("animation-name", "");
 				$('#feedback .content .message').css("animation-name", "fadeIn");
 				$('#feedback .content .people_amount').text(people_amount[current_feedback] + " Personnes");
-				$('#feedback .content .people_amount').css("animation-name", "");
 				$('#feedback .content .people_amount').css("animation-name", "fadeIn");
 				$('#feedback .content .location').text(party_location[current_feedback]);
-				$('#feedback .content .location').css("animation-name", "");
 				$('#feedback .content .location').css("animation-name", "fadeIn");
+				setTimeout(function() {	$('#feedback .content .title').css("animation-name", "");
+										$('#feedback .content .message').css("animation-name", "");
+										$('#feedback .content .people_amount').css("animation-name", "");
+										$('#feedback .content .location').css("animation-name", "");} , 1000)
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
 				$('#feedback .content .grade .star').slice(0, current_feedback+1/*grades[current_feedback]*/).addClass("fa-star");
