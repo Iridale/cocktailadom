@@ -413,7 +413,7 @@
 					showFeedback(current_feedback + 1);
 				});
 				$('#feedback .content .grade .star').on('click', function() {
-					showFeedback($('#feedback .content .grade .star').index());
+					showFeedback($(this).index());
 				});
 				
 				showFeedback(current_feedback);

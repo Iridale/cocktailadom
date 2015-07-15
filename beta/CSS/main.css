@@ -434,6 +434,7 @@ a {
 	width:20px;
 	margin:0 10px;
 	color:#bf5287;
+	cursor:pointer;
 }
 #feedback .controller.left {
 	left:0;
