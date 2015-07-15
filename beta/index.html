@@ -400,8 +400,8 @@
 			function showFeedback(n) {
 				current_feedback = (n + titles.length) % titles.length;
 				$('#feedback .content .title').text(titles[current_feedback]);
-				$('#feedback .content .title').css("display", "none");
-				$('#feedback .content .title').fadeIn(1000);
+				$('#feedback .content .title').css("animation-name", "");
+				$('#feedback .content .title').css("animation-name", "fadeIn");
 				$('#feedback .content .message').text(messages[current_feedback]);
 				$('#feedback .content .message').css("display", "none");
 				$('#feedback .content .message').fadeIn(1000);
@@ -413,8 +413,8 @@
 				$('#feedback .content .location').fadeIn(1000);
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
-				$('#feedback .content .grade .star').slice(0, n+1/*grades[current_feedback]*/).addClass("fa-star");
-				$('#feedback .content .grade .star').slice(n+1/*grades[current_feedback]*/).addClass("fa-star-o");
+				$('#feedback .content .grade .star').slice(0, current_feedback+1/*grades[current_feedback]*/).addClass("fa-star");
+				$('#feedback .content .grade .star').slice(current_feedback+1/*grades[current_feedback]*/).addClass("fa-star-o");
 			}
 			$(function(){
 				$('#feedback .controller.left .control').on('click', function() {
