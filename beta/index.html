@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<!-- This website has been created by Matthieu Crochez (matthieu.crochez@gmail.com) for Cocktailadom 
 	Jan. 2015 -->
 	<head>
@@ -404,14 +404,14 @@
 				$('#feedback .content .title').css("animation-name", "");
 				$('#feedback .content .title').css("animation-name", "fadeIn");
 				$('#feedback .content .message').text(messages[current_feedback]);
-				$('#feedback .content .message').css("display", "none");
-				$('#feedback .content .message').fadeIn(1000);
+				$('#feedback .content .message').css("animation-name", "");
+				$('#feedback .content .message').css("animation-name", "fadeIn");
 				$('#feedback .content .people_amount').text(people_amount[current_feedback] + " Personnes");
-				$('#feedback .content .people_amount').css("display", "none");
-				$('#feedback .content .people_amount').fadeIn(1000);
+				$('#feedback .content .people_amount').css("animation-name", "");
+				$('#feedback .content .people_amount').css("animation-name", "fadeIn");
 				$('#feedback .content .location').text(party_location[current_feedback]);
-				$('#feedback .content .location').css("display", "none");
-				$('#feedback .content .location').fadeIn(1000);
+				$('#feedback .content .location').css("animation-name", "");
+				$('#feedback .content .location').css("animation-name", "fadeIn");
 				$('#feedback .content .grade .star').removeClass("fa-star");
 				$('#feedback .content .grade .star').removeClass("fa-star-o");
 				$('#feedback .content .grade .star').slice(0, current_feedback+1/*grades[current_feedback]*/).addClass("fa-star");
