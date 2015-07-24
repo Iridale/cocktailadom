@@ -20,43 +20,12 @@
 		</script>
 		
 		<script type="text/javascript" src="./JS/DotNavigation/js/modernizr.min.js"></script>
-		
-        <!-- Include Thumbelina script. -->
-        <script type="text/javascript" src="thumbelina-master/thumbelina.js"></script>
-		
-		<!-- Create sliders. -->
-        <script type="text/javascript">
-            $(function(){
-                
-                $('#slider').Thumbelina({
-                    $bwdBut:$('#slider .left'),    // Selector to left button.
-                    $fwdBut:$('#slider .right')    // Selector to right button.
-                });
-            })
-        </script>
-        
-        <!-- Create image picker -->
-        <script type="text/javascript">
-            $(function(){
-            	$('#gallery-display-img').on('load', function() {
-                    $('#gallery-display-img').fadeIn(1000);
-				});
-                $('#slider .thumb').click(function(){
-                    $('#gallery-display-img').attr('src', this.src.replace('-TH', ''));
-					$('#gallery-display-img').css('display', 'none');
-				});
-            })
-        </script>
-		
 
         
 		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/animations.css">
-		<!--<link rel="stylesheet" type="text/css" href="./JS/DotNavigation/css/component.css">-->
-		<link rel="stylesheet" type="text/css" href="./JS/ButtonMorph/resources/component.css">
-		<link rel="stylesheet" type="text/css" href="./thumbelina-master/thumbelina.css">
 	</head>
 	
 	<body>
@@ -66,40 +35,7 @@
 		<div class="fullPageHeight firstTile backgroundImage" style="background-image:url('./resources/pictures/59702_490536737648734_11857388_n.jpg');">
 			<div class="middle">
 				<a href="./devis.html" class="simpleButton devisButton">Demande de Devis</a>
-				<div class="play morph-button morph-button-modal morph-button-modal-4 morph-button-fixed"><button type="button">Nos soirées en images</button>
-					<div class="morph-content">
-						<div>
-							<div class="content-style-video">
-								<span class="icon icon-close">Fermer</span>
-								<div id="slider" class="gallery">
-									<div class="thumbelina-but horiz left">&#706;</div>
-									<div style="position:absolute;overflow:hidden;width:100%;height:100%;">
-										<ul class="thumbelina" style="left: -177px;">
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery1-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery2-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery3-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery4-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery5-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery6-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery7-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery8-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery9-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery10-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery11-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery12-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery13-TH.png" alt=""></li>
-											<li style="display: block;"><img class="thumb" src="./resources/pictures/gallery/gallery14-TH.png" alt=""></li>
-										</ul>
-									</div>
-									<div class="thumbelina-but horiz right">&#707;</div>
-								</div>
-								<div id="gallery-display">
-									<img id="gallery-display-img" src="./resources/pictures/gallery/gallery1.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<a href="https://www.facebook.com/pages/Cocktailadom/263512637017813" target="_blank" class="simpleButton fbButton"><span></span>Page Facebook</a>
 			</div>
 		</div>
 		<div style="position:relative;width:100%;margin-bottom:100px;">
@@ -473,9 +409,6 @@
 	                scrollToIdPlus('#prestationsAnchor', -82);
 			}
 		</script>
-		<script type="text/javascript" src="./JS/ButtonMorph/resources/modernizr.custom.js"></script>
-		<script type="text/javascript" src="./JS/ButtonMorph/resources/uiMorphingButton_fixed.js"></script>
-		<script type="text/javascript" src="./JS/ButtonMorph/resources/classie.js"></script>
 		<script type="text/javascript">
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -484,13 +417,6 @@
 
   			ga('create', 'UA-26236422-1', 'auto');
   			ga('send', 'pageview');
-		</script>
-		<script type="text/javascript">
-			(function() {
-				new UIMorphingButton( document.querySelector( '.morph-button' ), {
-					closeEl : '.icon-close'
-				} );
-			})();
 		</script>
 	</body>
 </html>

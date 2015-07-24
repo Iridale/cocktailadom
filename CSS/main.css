@@ -1,6 +1,6 @@
 body {
-	background-color:#222;
-	color:white;
+	background-color:black;
+	color:white;#
 	font-family:PT Sans, sans-serif;
 	font-size:1.5em;
 	margin:0;
@@ -75,6 +75,27 @@ a {
 .simpleButton {
 	background-color:RGB(191, 82, 135);
 	color:white;
+	transition-property:background-color;
+	transition-duration:0.5s;
+	transition-timing-function:ease-in-out;
+}
+.simpleButton:hover {
+	background-color:RGB(71, 62, 115);
+}
+
+.fbButton.simpleButton {
+	background-color:rgb(67, 96, 156);
+}
+.fbButton.simpleButton:hover {
+	background-color:rgb(47, 66, 116);
+}
+.fbButton.simpleButton span {
+	background-image:url("./resources/fb_icon.png");
+	display:inline-block;
+	height:40px;
+	width:40px;
+	margin-right:15px;
+	vertical-align:middle;
 }
 .firstTile .play {
 	height:53px !important;
@@ -102,28 +123,6 @@ a {
     width: 800px;
 }
 
-.hover-opacity {
-	transition:background-color 0.7s;
-}
-.hover-opacity:hover {
-	background-color:rgba(0, 0, 0, 0.7);
-}
-
-.hover-opacity .appear {
-	opacity:0;
-	
-    /* For Safari 3.1 to 6.0 */
-    -webkit-transition-property: opacity;
-    -webkit-transition-duration: 0.7s;
-    -webkit-transition-timing-function: linear;
-    /* Standard syntax */
-    transition-property: opacity;
-    transition-duration: 0.7s;
-    transition-timing-function: linear;
-}
-.hover-opacity:hover .appear {
-	opacity:1;
-}
 
 //OLD CSS
 
@@ -427,6 +426,7 @@ a {
 
 #feedback .grade {
 	cursor:default;
+	margin-top:25px;
 }
 
 #feedback .star {
