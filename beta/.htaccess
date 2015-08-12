@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Dev beta testing"
+AuthUserFile /home/21410/domains/css-tricks.com/html/examples/PasswordProtected/.htpasswd
+require valid-user

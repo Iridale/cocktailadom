@@ -1,63 +1,26 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>
-			$(function(){
-      			$("#menu").load("./components/menu.html");
-    		});
-			$(function(){
-      			$("#footer").load("./components/footer.html");
-    		});
-		</script>
-		
-		<!--<link href="./favicon.ico?" rel="shortcut icon">-->
-		<link rel="icon" type="image/png" href="http://iridale.github.io/cocktailadom/favicon.ico">
-		
-		<link rel="stylesheet" type="text/css" href="./CSS/main.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/footer.css">
-	</head>
-	
-	<body>
-	<!--<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<script type="text/javascript">var zdcvjhr1mb0pjk;(function(d, t) {
-		var s = d.createElement(t), options = {
-		'userName':'iridale',
-		'formHash':'zdcvjhr1mb0pjk',
-		'autoResize':true,
-		'height':'732',
-		'async':true,
-		'host':'wufoo.com',
-		'header':'show',
-		'ssl':true};
-		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-		s.onload = s.onreadystatechange = function() {
-		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-		try { zdcvjhr1mb0pjk = new WufooForm();zdcvjhr1mb0pjk.initialize(options);zdcvjhr1mb0pjk.display(); } catch (e) {}};
-		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-		})(document, 'script');
-	</script>
+<div>
 
-	<div id="menu"></div>
-	<div class="fb-post" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500"></div>-->
-	<header id="menu">
-	</header>
-	<iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotformeu.com/form/41044008398351" frameborder="0" style="top:100px;width:100%; height:2021px; border:none;" scrolling="no"></iframe>
-<script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;case "collapseErrorPage":if (iframe.clientHeight > window.innerHeight) {iframe.style.height = window.innerHeight + "px";}break;case "reloadPage":window.location.reload();break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
-	
-	
-	<div id="footer"></div>
-	</body>
-	
-</html>
-	
+	<div class="section">
+		<div><span class="title">Cocktail party</span><input type="radio" name="event"></input></div>
+		<div><span class="title">Atelier cocktail</span><input type="radio" name="event"></input></div>
+		<div><span class="title">Bar a Mojito</span><input type="radio" name="event"></input></div>
+	</div>
+	<div class="section">
+		<div><span>Type d'événement:</span></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="section">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="section">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+
+</div>

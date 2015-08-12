@@ -90,7 +90,9 @@ a {
 	background-color:rgb(47, 66, 116);
 }
 .fbButton.simpleButton span {
-	background-image:url("./resources/fb_icon.png");
+	background-image:url("../resources/image/fb_icon.png");
+	background-size:38px;
+	background-repeat:no-repeat;
 	display:inline-block;
 	height:40px;
 	width:40px;

@@ -11,3 +11,10 @@
 	0%			{opacity:0;}
     100%		{opacity:1;}
 }
+
+@keyframes jiggle {
+	0%			{transform:initial;}
+	25%			{transform:rotate(10deg);}
+	50%			{transform:initial;}
+    75%			{transform:rotate(-10deg);}
+}
