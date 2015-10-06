@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../CSS/devis.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#datepicker").datepicker();
+            });
+        </script>
     </head>
     <body>
         <form method="post" action="./devis.php">
@@ -46,7 +52,7 @@
                             <div class="infoType"><div class="questionHeader">Où ?</div>
                                     <input type="text" placeholder="Saisir un lieu" name="Lieu"></input>
                             </div>
-                            <div class="infoType"><div class="questionHeader">Quand ?</div><input type="text" placeholder="Saisir une date" name="Date"></input></div>
+                            <div class="infoType"><div class="questionHeader">Quand ?</div><input id="DatePicker" type="text" placeholder="Saisir une date" name="Date"></input></div>
                             <div class="infoType"><div class="questionHeader">Durée ?</div>
                                             <select name="Duree">
                                                     <option value="default" disabled="disabled" selected>- Selectionner -</option>
