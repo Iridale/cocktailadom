@@ -1,26 +1,93 @@
-<div>
 
-	<div class="section">
-		<div><span class="title">Cocktail party</span><input type="radio" name="event"></input></div>
-		<div><span class="title">Atelier cocktail</span><input type="radio" name="event"></input></div>
-		<div><span class="title">Bar a Mojito</span><input type="radio" name="event"></input></div>
-	</div>
-	<div class="section">
-		<div><span>Type d'événement:</span></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	<div class="section">
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	<div class="section">
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-
-
-</div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/devis.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <form method="post" action="./devis.php">
+                <div class="section first">
+                        <div class="title">Choisissez un type d'événement</div>
+                        <div class="sectionbody">
+                            <div class="CocktailParty eventType"><label for="CocktailParty">Cocktail party</label><input id="CocktailParty" type="radio" name="event" value="CocktailParty"></input></div>
+                            <div class="AtelierCocktail eventType"><label for="AtelierCocktail">Atelier cocktail</label><input id="AtelierCocktail" type="radio" name="event" value="AtelierCocktail"></input></div>
+                            <div class="BarAMojito eventType"><label for="BarAMojito">Bar a Mojito</label><input id="BarAMojito" type="radio" name="event" value="BarAMojito"></input></div>
+                        </div>
+                </div>
+                <div class="section second">
+                        <div class="title">Ajoutez vos options désirées</div>
+                        <div class="sectionbody">
+                            <div class="optionsType">
+                                    <div>
+                                            <label name="BarmanSeul"><input type="checkbox" name="BarmanSeul" value="BarmanSeul"></input>Barman seul</label>
+                                            <label name="BarLumineux"><input type="checkbox" name="BarLumineux"></input>Bar lumineux</label>
+                                            <label name="Verrerie"><input type="checkbox" name="Verrerie"></input>Verrerie à cocktail</label>
+                                    </div>
+                                    <div>
+                                            <label name="Alcool"><input type="checkbox" name="Alcool"></input>Alcool</label>
+                                            <label name="Soft"><input type="checkbox" name="Soft"></input>Soft, glace, fruit</label>
+                                    </div>
+                            </div>
+                            <div class="optionsType">
+                                    <div>
+                                            <label name="Flair"><input type="checkbox" name="Flair"></input>Flair tender (+300€)</label>
+                                            <label name="MachineFumee"><input type="checkbox" name="MachineFumee"></input>Machine à fumée</label>
+                                            <label name="Japonais"><input type="checkbox" name="Japonais"></input>Traiteur Japonais</label>
+                                            <label name="Cupcake"><input type="checkbox" name="Cupcake"></input>Traiteur cupcake</label>
+                                            <label name="Luminaire"><input type="checkbox" name="Luminaire"></input>Luminaire</label>
+                                    </div>
+                            </div>
+                        </div>  
+                </div>
+                <div class="section third">
+                        <div class="title">Informations pratiques sur votre événement</div><!--NEED SKIP BUTTON-->
+                        <div class="sectionbody">
+                            <div class="infoType"><div class="questionHeader">Où ?</div>
+                                    <input type="text" placeholder="Saisir un lieu" name="Lieu"></input>
+                            </div>
+                            <div class="infoType"><div class="questionHeader">Quand ?</div><input type="text" placeholder="Saisir une date" name="Date"></input></div>
+                            <div class="infoType"><div class="questionHeader">Durée ?</div>
+                                            <select name="Duree">
+                                                    <option value="default" disabled="disabled" selected>- Selectionner -</option>
+                                                    <option value="2h">2h</option>
+                                                    <option value="3h">3h</option>
+                                                    <option value="4h">4h</option>
+                                                    <option value="5h">5h</option>
+                                                    <option value="6h">6h</option>
+                                                    <option value="7h">7h</option>
+                                            </select>
+                            </div>
+                        </div>
+                </div>
+                <div class="section fourth">
+                        <div class="title">Vos informations de contact</div>
+                        <div class="sectionbody">
+                            <div class="forminfos">
+                                <div class="formfield"><span class="fa fa-user"></span><input name="Lastname" type="text" placeholder="Nom"></input><input name="Firstname" type="text" placeholder="Prénom"></input></div>
+                                <div class="formfield"><span class="fa fa-at"></span><input name="Email" type="email" placeholder="E-mail"></input></div>
+                                <div class="formfield"><span class="fa fa-phone"></span><input name="Phonenumber" type="text" placeholder="Téléphone"></input></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="section fifth">
+                        <div class="title">Informations supplémentaires</div>
+                        <div class="sectionbody">
+                            <div class="forminfos">
+                                <!--<div><span>Facebook</span></div>-->
+                                <div class="hintMessage"><span>Si vous avez des questions, ou si vous souhaitez éclaircir certains points, nous sommes à votre écoute et vous recontacterons aussi rapidement que possible.<br>
+                                    </span>
+                                </div>
+                                <div><textarea name="Message" placeholder="Votre message..."></textarea></div>
+                                <div class="submitContainer">
+                                    <button type="submit" disabled="disabled" title="Désactivé pendant la période de test">Demander le devis</button>
+                                    <div class="floating">
+                                        <input name="Promo" type="text" placeholder="Code promo"></input><span class="fa fa-question hintCodePromo" title="Si vous possédez un code promotionnel, n'oubliez pas de le communiquer pour bénéficier de l'avantage. N'hésitez pas à nous suivre sur notre page Facebook."></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </form>
+    </body>
+</html>
