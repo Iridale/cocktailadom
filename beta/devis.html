@@ -1,13 +1,21 @@
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../CSS/devis.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-        <script>
+	<head>
+		<meta charset="UTF-8">
+                <link rel="stylesheet" type="text/css" href="../CSS/devis.css">
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+                <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script>
+			$(function(){
+      			$("#menu").load("../components/menu.html");
+    		});
+			$(function(){
+      			$("#footer").load("../components/footer.html");
+    		});
+		</script>
+                <script>
             var selectedSection = -1;
             function nextSection() {
                 selectSection((selectedSection + 1) % 5);
@@ -73,8 +81,20 @@
                 $('.nextButton').click(nextSection);
             }
         </script>
-    </head>
-    <body>
+		
+		<!--<link href="./favicon.ico?" rel="shortcut icon">-->
+		<link rel="icon" type="image/png" href="http://iridale.github.io/cocktailadom/favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+	</head>
+	
+	<body>
+	
+	<header id="menu">
+	</header>
+	
         <form class="clearfix" method="post" action="./devis.php">
             <div class="sideHelperContainer">
                 <div class="layout">
@@ -148,11 +168,11 @@
                 <div class="section third collapsed">
                         <div class="title">Informations pratiques sur votre événement</div>
                         <div class="sectionbody">
-                            <div class="infoType"><div class="questionHeader">Où ?</div>
+                            <div class="infotype"><div class="questionHeader">Où ?</div>
                                     <input type="text" placeholder="Saisir un lieu" name="Lieu"/>
                             </div>
-                            <div class="infoType"><div class="questionHeader">Quand ?</div><input id="DatePicker" type="text" placeholder="Saisir une date" name="Date"/></div>
-                            <div class="infoType"><div class="questionHeader">Durée ?</div>
+                            <div class="infotype"><div class="questionHeader">Quand ?</div><input id="DatePicker" type="text" placeholder="Saisir une date" name="Date"/></div>
+                            <div class="infotype"><div class="questionHeader">Durée ?</div>
                                             <select name="Duree">
                                                     <option value="default" disabled="disabled" selected>- Selectionner -</option>
                                                     <option value="2h">2h</option>
@@ -201,5 +221,9 @@
                 </div>
             </div>
         </form>
-    </body>
+	
+	<div id="footer"></div>
+	</body>
+	
 </html>
+	

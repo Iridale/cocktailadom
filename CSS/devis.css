@@ -4,7 +4,7 @@
 }
 
 form {
-    width: 1050px;
+    width: 1250px;
     margin-left: auto;
     margin-top:100px;
     margin-right: auto;
@@ -21,7 +21,7 @@ form {
 
 
 .section .forminfos {
-    margin:0 10%;
+    margin: 30px 10%;
     display:block;
 }
 
@@ -38,8 +38,13 @@ form {
     transition-timing-function: ease-in-out;
     transition-duration: 0.6s;
     overflow:hidden;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #cc33ff;
     margin:0 15px;
-    background:linear-gradient(to right, rgba(200, 20, 20, 0.0), rgba(200, 20, 20, 0.3),rgba(200, 20, 20, 0.4), rgba(200, 20, 20, 0.3),  rgba(200, 20, 20, 0.0));
+    background: linear-gradient(to right, rgba(255, 204, 204, 1), rgb(226, 163, 203), rgba(238, 180, 195, 1), rgb(226, 163, 203),  rgba(255, 204, 204, 1));
 }
 .sectionbody > div {
     display:inline-block;
@@ -50,19 +55,22 @@ form {
 }
 
 .first .sectionbody {
-    height: 245px;
+    height: 265px;
 }
 .second .sectionbody {
-    height:220px;
+    height: 335px;
 }
 .third .sectionbody {
-    height:113px;
+    height: 190px;
 }
 .fourth .sectionbody {
-    height:155px;
+    height: 250px;
 }
 .fifth .sectionbody {
-    height:221px;
+    height: 325px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #CC33FF;
 }
 
 /* FIRST */
@@ -74,6 +82,7 @@ form {
 }
 .section.first .eventType label {
     position:absolute;
+    font-size: 1.3em;
     top: 75px;
     /* color: rgba(0,0,0,0.6); */
     left:0;
@@ -86,12 +95,15 @@ form {
     transform: translateX(-100%);
     position: absolute;
     left: 0;
-    top: 91px;
+    top: 77px;
+    padding: 10px 0;
+    font-size: 17px;
     right: 0;
     transition-property: transform;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 2px white;
+    text-shadow: 0px 0px 7px rgba(255,255,255,1), 0px 0px 4px white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
 }
 .section.first .eventType:hover span, .section.first .eventType.selected span {
     transform:none;
@@ -105,7 +117,7 @@ form {
 .section.first .eventType.selected {
 }
 .section.first .eventType.selected {
-    box-shadow:0px 0px 15px 5px #ffaaaa;
+    box-shadow: 0px 0px 15px 5px whitesmoke;
 }
 .section.first .eventType {
     width:30%;
@@ -114,6 +126,7 @@ form {
     height:180px;
     cursor: pointer;
     /* line-height: 180px; */
+    z-index: 1;
     position:relative;
     transition-property: width, height, margin;
     transition-duration: 0.2s;
@@ -122,7 +135,18 @@ form {
     overflow: hidden;
 }
 .section.first .eventType:hover:after, .section.first .eventType.selected:after {
-    opacity:0.4;
+    opacity:0.6;
+}
+.section.first .eventType:before {
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+    background-color:whitesmoke;
 }
 .section.first .eventType:after {
     content: "";
@@ -131,8 +155,8 @@ form {
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
     z-index: -1;
+    position: absolute;
     background-size: cover;
     background-position: center center;
     background-repeat:no-repeat;
@@ -171,7 +195,7 @@ form {
 
 .section.third .infotype {
     display:inline-block;
-    width:25%;
+    width: 24%;
     margin:10px 4%;
     text-align:center;
 }
@@ -209,7 +233,7 @@ form {
 }
 .section.fifth textarea {
     margin:10px;
-    width:100%;
+    width: calc(100% - 20px);
     border-radius:5px;
     border:1px solid #ccc;
     min-height:100px;
@@ -219,9 +243,10 @@ form {
 .section.fifth .submitContainer {
     text-align:center;
     position:relative;
+    margin-top: 20px;
 }
 .section.fifth .submitContainer button:hover {
-    border-color:rgba(204, 51, 255, 0.4);
+    border-color: #FFCCCC;
     color: white;
 }
 .section.fifth .submitContainer button {
@@ -229,7 +254,7 @@ form {
     width: 195px;
     border-radius:5px;
     cursor:pointer;
-    border: 2px solid #cc33ff;
+    border: 2px solid rgb(199, 137, 211);
     background-color: rgba(200, 20, 20, 0.2);
     font-size: 16px;
     color: black;
@@ -278,8 +303,9 @@ form {
 }
 
 .formContent {
-    float:right;
-    width: calc(100% - 200px);
+    float: left;
+    width: calc(100% - 400px);
+    color: black;
 }
 
 .layout {
@@ -312,10 +338,11 @@ form {
     transition-property: font-size, text-shadow, color, text-indent;
 }
 .sectionReference.collapsed .sectionReferenceLabel {
-    color:#ccc;
+    color: #bbb;
 }
 .sectionReference.fifth.collapsed .sectionReferenceLabel {
-    text-indent: -3px;
+    text-indent: -8px;
+    font-size: 0.8em;
 }
 
 .sectionReference.active .sectionReferenceLabel {
