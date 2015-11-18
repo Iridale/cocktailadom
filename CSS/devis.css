@@ -196,7 +196,7 @@ form {
 .section.third .infotype {
     display:inline-block;
     width: 24%;
-    margin:10px 4%;
+    margin:25px 4%;
     text-align:center;
 }
 .section.third .infotype input {
